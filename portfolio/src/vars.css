@@ -1,0 +1,11 @@
+:root{
+    /* colors */
+    --color-text:black;
+    --color-primary: #5dc1b965;
+    --color-secondary: #51b5ae;
+    --color-darck: #369e97;
+    --color-bg: #ffff;
+
+    /* fonts */
+    --font-robot: "ucida Grande";
+}
