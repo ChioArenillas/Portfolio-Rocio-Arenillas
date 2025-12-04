@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styles from "./Navbar.module.css";
 import {getImageUrl} from "../../utils.js";
 
+
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
