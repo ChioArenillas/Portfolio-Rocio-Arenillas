@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils.js";
+import closeIcon from "../../../assets/nav/closeIcon.png";
+import menuIcon from "../../../assets/nav/menuIcon.png";
 
 
 export default function Navbar() {
@@ -9,12 +10,12 @@ export default function Navbar() {
   return (
     <nav className={styles.navbarBg}>
     <div className={styles.navbar}>
-      <a className={styles.title} href="/">&lt; Rocio Arenillas /&gt;</a>
+      <a className={styles.title} href="/">&lt;Rocio Arenillas/&gt;</a>
       <div className={styles.menu}>
         <img className={styles.menuBtn} 
         src={menuOpen 
-            ? getImageUrl("nav/closeIcon.png")
-            : getImageUrl("nav/menuIcon.png")
+            ? closeIcon
+            : menuIcon
         } 
         alt="menu-button"
         onClick={() => setMenuOpen(!menuOpen)} />
