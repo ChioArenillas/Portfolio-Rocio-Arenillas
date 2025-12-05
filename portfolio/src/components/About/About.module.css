@@ -9,61 +9,61 @@
     z-index: 1;
     margin-left: 10%;
     margin-right: 10%;
-
-    .content {
+}
+.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 1;
-
-        .title{
-        font-size: 52px;
-        color: var(--color-dark) ;
-        font-weight: bold;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
-        }
-
-        .description{
-            font-size: 18px;
-            padding-bottom: 20px;
-
-            .colorText{
-                color: var(--color-dark);
-                font-weight: 600;
-            }
-        }
-        .btnsection{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .button {
-            align-self: center;
-            padding: 14px;
-            margin-bottom: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            background: var(--color-secondary) ;
-            color: var(--color-text-light);
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .socials{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            fill: var(--color-text-dark);
-            cursor: pointer;
-        }
-    } 
 }
+.title{
+    font-size: 48px;
+    color: var(--color-dark) ;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.colorText{
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.btnsection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.button {
+    align-self: center;
+    padding: 14px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background: var(--color-secondary) ;
+    color: var(--color-text-light);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    fill: var(--color-text-dark);
+    cursor: pointer;
+}
+    
 .aboutImg{
-        width: 250px;
+        width: 25%;
         z-index: 1;
+        box-shadow: 0px 6px 10px rgba(0,0,0,1);
         border-radius:150px;
         margin: 30px;
 
@@ -90,7 +90,14 @@
         flex-direction: column-reverse;
     }
     .content{
-        align-items:center;
+        align-items: center;
+    }
+    .title{
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+    .description{
+            font-size: 14px;
     }
     .aboutImg{
         width: 150px;
