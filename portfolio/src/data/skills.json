@@ -1,42 +1,42 @@
 [
     {
         "title": "Figma",
-        "imageSrc": "skills/figma.png"
+        "imageSrc": "figma.png"
     },
     {
         "title": "GitHub",
-        "imageSrc": "skills/github.png"
+        "imageSrc": "github.png"
     },
     {
         "title": "VisualCode",
-        "imageSrc": "skills/visualcode.png"
+        "imageSrc": "VScode.png"
     },
     {
         "title": "HTML",
-        "imageSrc": "skills/html.png"
+        "imageSrc": "HTML.png"
     },
     {
         "title": "CSS",
-        "imageSrc": "skills/css.png"
+        "imageSrc": "css.png"
     },
     {
         "title": "Javascript",
-        "imageSrc": "skills/javascript.png"
+        "imageSrc": "javascript.png"
     },
     {
         "title": "git",
-        "imageSrc": "skills/git.png"
+        "imageSrc": "git.png"
     },
     {
         "title": "React",
-        "imageSrc": "skills/react.png"
+        "imageSrc": "react.png"
     },
     {
-        "title": "Node.js",
-        "imageSrc": "skills/node.png"
+        "title": "Next.js",
+        "imageSrc": "nextjs.png"
     },
     {
         "title": "Redux",
-        "imageSrc": "skills/redux.png"
+        "imageSrc": "redux.png"
     }
 ]

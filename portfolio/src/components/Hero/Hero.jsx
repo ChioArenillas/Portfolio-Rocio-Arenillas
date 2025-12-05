@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Hero.module.css";
-import topPicture from "../../../assets/hero/top-picture.jpg";
+import topPicture from "../../assets/hero/top-picture.jpg";
 
 export default function Hero() {
   return (

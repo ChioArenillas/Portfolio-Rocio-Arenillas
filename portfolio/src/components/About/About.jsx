@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "./About.module.css";
-import github from "../../../assets/contact/githubIcon.png"
-import linkedin from "../../../assets/contact/linkedinIcon.png"
-import about from "../../../assets/about/aboutImg.jpg"
+import github from "../../assets/contact/githubIcon.png"
+import linkedin from "../../assets/contact/linkedinIcon.png"
+import about from "../../assets/about/aboutImg.jpg"
 
 export default function About() {
   return (
