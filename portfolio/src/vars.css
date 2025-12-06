@@ -9,4 +9,9 @@
 
     /* fonts */
     --font-robot: "ucida Grande";
+
+    /* skills */
+    --width: 100px;
+    --height: 100px;
+    --quantity: 9;
 }

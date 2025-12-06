@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .navbarBg{
-    background-color: var(--color-secondary);
+    background-color: var(--color-dark);
     margin-top: 10px;
     margin-bottom: 10px;
     position: sticky;
@@ -14,8 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 2;
     margin: 0 10%;
 }
@@ -28,6 +28,7 @@
 }
 .menuBtn{
     display: none;
+    margin-top: -2px;
 }
 .menu {
     display: flex;
@@ -42,6 +43,8 @@
     color: var(--color-text-light);
     text-decoration: none;
 }
+
+/* ******** SMALL SCREEN *********** */
 
 @media screen and (max-width: 830px){
     .navbar{

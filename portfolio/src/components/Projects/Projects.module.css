@@ -1,0 +1,41 @@
+@import "../../vars.css";
+
+.container {
+    margin-top: 20px;
+    color: var(--color-text);
+    background-color: var(--color-dark);
+}
+
+
+.title {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.projects {
+  margin-top: 37px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+
+
+/* ******** SMALL SCREEN *********** */
+
+@media screen and (max-width: 830px){
+    .title{
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+}
