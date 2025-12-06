@@ -1,26 +1,58 @@
 [
   {
-    "title": "Project A",
+    "title": "Movie Website",
     "imageSrc": "web.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "url": "https://www.example.com",
-    "github": "https://www.github.com"
+    "description": "A website showcasing movie information, built with clean HTML and CSS for a smooth user experience.",
+    "icons": ["HTML.png","css.png"],
+    "url": "https://chioarenillas.github.io/Proyecto/",
+    "github": "https://github.com/ChioArenillas/Proyecto.git"
   },
   {
-    "title": "Project B",
-    "imageSrc": "web.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "url": "https://www.example.com",
-    "github": "https://www.github.com"
-  },
+    "title": "Pokemon App",
+    "imageSrc": "pokemonapp.png",
+    "description": "Build a multi-page Pokémon web application with detailed Pokémon information, using Next.js for the frontend and server-side functionality.",
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "url": "https://app-pokemon-ftqxwhrhh-chios-projects-fcca0dbc.vercel.app/",
+    "github": "https://github.com/ChioArenillas/AppPokemon.git"
+  },  
   {
-    "title": "Project C",
-    "imageSrc": "web.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "url": "https://www.example.com",
-    "github": "https://www.github.com"
+    "title": "Blackjack Game",
+    "imageSrc": "Blackjack.png",
+    "description": "Developed an interactive Blackjack game with button-driven gameplay, implementing game logic and user interactions using JavaScript.",
+    "icons": ["HTML.png","css.png", "javascript.png"],
+    "url": "https://black-jack-app-one.vercel.app/",
+    "github": "https://github.com/ChioArenillas/BlackJackApp.git"
+  },  
+  {
+    "title": "Activity Booking App",
+    "imageSrc": "App.png",
+    "description": "Designed a mobile app prototype in Figma to simplify the process of discovering and reserving activities.",
+    "icons": ["figma.png"],
+    "url": "https://www.figma.com/proto/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?page-id=293%3A3175&node-id=293-3194&p=f&viewport=326%2C51%2C0.04&t=WhhkFQ6UQXHIeZ7O-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=293%3A3194",
+    "github": ""
+  },
+    {
+    "title": "Films selector",
+    "imageSrc": "dataFilms.png",
+    "description": "Developed a film searcher page, with selectors, grid and list view and search input. Getting the data from a API.",
+    "icons": ["HTML.png","css.png", "javascript.png"],
+    "url": "https://films-data-base.vercel.app/",
+    "github": "https://github.com/ChioArenillas/Films-Data-Base.git"
+  },
+    {
+    "title": "Movie Data Page",
+    "imageSrc": "MovieData.png",
+    "description": "A movie information page, built with clean HTML and CSS for a smooth user experience.",
+    "icons": ["HTML.png","css.png"],
+    "url": "https://chioarenillas.github.io/Pelicula/",
+    "github": "https://github.com/ChioArenillas/Pelicula.git"
+  },
+{
+    "title": "Booking Confirmation Email",
+    "imageSrc": "email.png",
+    "description": "Created a custom email template for client reservations, designed with HTML and CSS to ensure clarity and cross-device compatibility.",
+    "icons": ["HTML.png","css.png"],
+    "url": "https://chioarenillas.github.io/Emails/",
+    "github": "https://github.com/ChioArenillas/Emails.git"
   }
 ]
