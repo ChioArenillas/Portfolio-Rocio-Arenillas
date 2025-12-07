@@ -29,7 +29,7 @@
     "description": "Designed a mobile app prototype in Figma to simplify the process of discovering and reserving activities.",
     "icons": ["figma.png"],
     "url": "https://www.figma.com/proto/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?page-id=293%3A3175&node-id=293-3194&p=f&viewport=326%2C51%2C0.04&t=WhhkFQ6UQXHIeZ7O-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=293%3A3194",
-    "github": ""
+    "figma": "https://www.figma.com/design/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?node-id=0-1&t=kcqRBVuQsUqc2Ngd-1"
   },
     {
     "title": "Films selector",
@@ -50,7 +50,7 @@
 {
     "title": "Booking Confirmation Email",
     "imageSrc": "email.png",
-    "description": "Created a custom email template for client reservations, designed with HTML and CSS to ensure clarity and cross-device compatibility.",
+    "description": "Created a custom email template for client reservations, designed with HTML and CSS.",
     "icons": ["HTML.png","css.png"],
     "url": "https://chioarenillas.github.io/Emails/",
     "github": "https://github.com/ChioArenillas/Emails.git"

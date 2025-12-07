@@ -1,15 +1,24 @@
 @import "../../vars.css";
 
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 10px;
   background: linear-gradient(180deg, #ffff 50%, var(--color-secondary) 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 300px;
   margin-bottom: 50px;
-  max-height: 450px;
+  height: 580px;
+}
+.container:hover{
+  transform: scale(1.06);
 }
 
 .image {
@@ -47,7 +56,6 @@
   margin-top: 15px;
   display: flex;
   justify-content: right;
-  gap: 10px;
 }
 
 
@@ -55,7 +63,7 @@
 @media screen and (max-width: 830px){
     .container{
         max-width: 250px;
-
+        height: 500px;
     }
     .title {
         font-size: 20px;
@@ -66,9 +74,6 @@
         }
         .skill{
             width: 60%;
-        }
-        .links {
-        gap: 0;
         }
         .icons {
             width: 70%;
