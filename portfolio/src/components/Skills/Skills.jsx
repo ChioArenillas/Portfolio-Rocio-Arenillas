@@ -2,22 +2,20 @@ import React, { useRef, useEffect } from "react";
 import styles from "./Skills.module.css";
 import skills from "/src/data/skills.json";
 
-// Cargamos todas las imágenes de la carpeta skills
 const images = import.meta.glob("/src/assets/skills/*", {
   eager: true,
   import: "default",
 });
 
 export default function Skills() {
-  // Función que empareja nombre del JSON con archivo real generado por Vite
   const getImage = (file) => {
-    const baseName = file.split(".")[0]; // "html" desde "html.png"
+    const baseName = file.split(".")[0]; 
 
     const entry = Object.entries(images).find(([path]) =>
       path.includes(baseName)
     );
 
-    return entry?.[1]; // Devuelve la imagen final
+    return entry?.[1]; 
   };
 
   const sliderRef = useRef(null);
