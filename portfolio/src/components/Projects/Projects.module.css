@@ -3,7 +3,6 @@
 .container {
     margin-top: 20px;
     color: var(--color-text);
-    background-color: var(--color-dark);
 }
 .title {
     color: white;
@@ -13,12 +12,16 @@
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
+    background-color: var(--color-dark);
 }
-
+.projectsBackground{
+    background-color: var(--color-dark);
+}
 .projects {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 5%;
   margin-right: 5%;
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -1,0 +1,18 @@
+@import "../../vars.css";
+
+.footer{
+    background-color: var(--color-dark);
+}
+.content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: var(--color-text-light);
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.content a{
+    color: var(--color-text-light);
+}

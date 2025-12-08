@@ -57,6 +57,10 @@
   display: flex;
   justify-content: right;
 }
+.links:hover{
+    transform: scale(1.06);
+
+}
 
 
 /* ************** SMALL SCREEN */

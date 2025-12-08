@@ -71,7 +71,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className={styles.container} id="skills">
+    <section className={styles.container} id="Skills">
       
       <div className={styles.titleBackground}>
         <h1 className={styles.title}>SKILLS & TOOLS</h1>
