@@ -99,12 +99,16 @@
         font-size: var(--font-size-small-title);
         letter-spacing: 1px;
     }
+    .box{
+        width: 100%;
+    }
     .inputTitle{
         font-size: var(--font-size-small-text);
 }
     .input {
         font-size: var(--font-size-small-text);
     }
+
     .btn {
         font-size: var(--font-size-small-text);
     }
