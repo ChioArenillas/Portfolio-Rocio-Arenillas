@@ -71,7 +71,7 @@
   @media (max-width: 830px) {
     .text {
       gap: 80px;
-
+    }
       .title {
         font-size: var(--font-size-small-title);
       }
@@ -79,7 +79,7 @@
       .subtitle {
         font-size: var(--font-size-small-text);
       }
-    }
+  
   }
 
   @media (max-width: 700px) {
