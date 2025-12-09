@@ -14,7 +14,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0;
-    font-size: 42px;
+    font-size: var(--font-size-title);
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -27,7 +27,7 @@
     align-items: flex-start;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 18px;
+    font-size: var(--font-size-text);
 }
 .social:hover {
     transform: scale(1.06);
@@ -46,12 +46,13 @@
     gap: 10px;
 }
 .inputTitle{
+    font-size:var(--font-size-text);
     font-weight: bold;
 }
 .input {
     width: 100%;
     padding: 8px 20px;
-    font-size: 18px;
+    font-size: var(--font-size-text);
     border: 1px solid var(--color-text-dark);
     border-radius: 8px;
     box-sizing: border-box; 
@@ -66,7 +67,7 @@
     width: fit-content;
     margin-left: auto;
     padding: 14px;
-    font-size: 18px;
+    font-size: var(--font-size-text);
     font-weight: bold;
     background: var(--color-secondary);
     color: var(--color-text-light);
@@ -83,10 +84,21 @@
 @media screen and (max-width: 830px){
     .content {
         flex-direction: column;
+        font-size: var(--font-size-small-text);
+
     }
     .title{
-        font-size: 32px;
+        font-size: var(--font-size-small-title);
         letter-spacing: 1px;
+    }
+    .inputTitle{
+        font-size: var(--font-size-small-text);
+}
+    .input {
+        font-size: var(--font-size-small-text);
+    }
+    .btn {
+        font-size: var(--font-size-small-text);
     }
 
 }

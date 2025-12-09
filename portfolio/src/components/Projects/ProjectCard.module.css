@@ -27,13 +27,13 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: var(--font-size-title);
   font-weight: 700;
 }
 
 .description {
   margin-top: 6px;
-  font-size: 18px;
+  font-size: var(--font-size-text);
   font-weight: 400;
 }
 .skills {
@@ -71,11 +71,11 @@
         height: 500px;
     }
     .title {
-        font-size: 20px;
+        font-size: var(--font-size-small-title);
         }
         .description {
         margin-top: 4px;
-        font-size: 14px;
+        font-size: var(--font-size-small-text);
         }
         .skill{
             width: 60%;

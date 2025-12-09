@@ -11,7 +11,7 @@
     color: var(--color-text-light);
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: var(--font-size-text);
 }
 .content a{
     color: var(--color-text-light);

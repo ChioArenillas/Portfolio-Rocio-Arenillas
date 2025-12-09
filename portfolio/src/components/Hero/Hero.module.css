@@ -42,7 +42,7 @@
 }
 
 .title {
-  font-size: 52px;
+  font-size: var(--font-size-title);
   font-weight: bold;
   letter-spacing: 10px;
   margin: 0;
@@ -50,7 +50,7 @@
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: var(--font-size-text);
   margin: 0;
   text-align: center;
 }
@@ -73,18 +73,20 @@
       gap: 80px;
 
       .title {
-        font-size: 36px;
+        font-size: var(--font-size-small-title);
       }
 
       .subtitle {
-        font-size: 16px;
+        font-size: var(--font-size-small-text);
       }
     }
   }
 
   @media (max-width: 700px) {
     .text {
-      display: none;
-    }
+      font-size: 8px;
+      letter-spacing: 0px;
+/*       display: none;
+ */    }
   }
 }

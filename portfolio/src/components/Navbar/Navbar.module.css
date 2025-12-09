@@ -21,14 +21,13 @@
 }
 
 .title {
-    font-size: 28px;
+    font-size: var(--font-size-title);
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text-light);
 }
 .menuBtn{
     display: none;
-    margin-top: -2px;
 }
 .menu {
     display: flex;
@@ -44,7 +43,7 @@
     }
 
 .menu  {
-    font-size: 25px;
+    font-size: var(--font-size-text);
     color: var(--color-text-light);
     text-decoration: none;
 }
@@ -57,8 +56,12 @@
         align-items: flex-start;
 
     }
+    .title{
+        font-size: var(--font-size-small-title);
+    }
     .menu{
         position: absolute;
+        font-size: var(--font-size-small-text);
         right: 0;
         flex-direction: column;
         align-items: flex-end;
@@ -68,6 +71,7 @@
     .menuBtn {
         display: block;
         cursor: pointer;
+        margin-top: -6px;
     }
     .menuItems{
         display: none;

@@ -10,6 +10,12 @@
     /* fonts */
     --font-robot: "ucida Grande";
 
+    /* font-size */
+    --font-size-title: 24px;
+    --font-size-text: 16px;
+    --font-size-small-title: 22px;
+    --font-size-small-text: 14px;
+
     /* skills */
     --width: 100px;
     --height: 100px;

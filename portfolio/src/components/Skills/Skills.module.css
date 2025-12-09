@@ -12,7 +12,7 @@
     color: white;
     text-align: center;
     padding: 10px 0;
-    font-size: 42px;
+    font-size: var(--font-size-title);
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -71,7 +71,7 @@
 }
 
 .skillName {
-  font-size: 13px;
+  font-size: var(--font-size-small-text);
   color: var(--color-text-dark);
   height: 20px;
   line-height: 20px;
@@ -91,14 +91,14 @@
 
 @media screen and (max-width: 830px){
     .title{
-        font-size: 32px;
+        font-size: var(--font-size-small-title);
         letter-spacing: 1px;
     }
     .logo{
         width: 70%;
     }
     .skillItem{
-        font-size: 14px;
+      font-size: var(--font-size-small-text);
     }
 }
 
