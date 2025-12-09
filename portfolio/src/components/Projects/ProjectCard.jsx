@@ -1,6 +1,5 @@
 import React from "react";
 import githubIcon from "../../assets/contact/githubIcon.png";
-import urlIcon from "../../assets/contact/urlIcon.png";
 import figmaIcon from "../../assets/contact/figmaIcon.png";
 
 import styles from "./ProjectCard.module.css";

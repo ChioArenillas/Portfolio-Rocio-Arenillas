@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./Contact.module.css";
 import github from "../../assets/contact/githubIcon.png";
 import linkedin from "../../assets/contact/linkedinIcon.png";
 
 export default function Contact() {
+    const [sent, setSent] = useState(false);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const form = e.target;
+
+        fetch("https://formsubmit.co/arenillasr@gmail.com", {
+            method: "POST",
+            body: new FormData(form)
+        })
+        .then(() => {
+            setSent(true);
+            form.reset();
+        })
+        .catch(() => alert("Something went wrong, try again later."));
+    };
+
     return (
         <section className={styles.container} id='Contact'>
             <div className={styles.titleBackground}>
@@ -26,13 +44,7 @@ export default function Contact() {
                     <p>Don’t be shy!</p>
                 </div>
 
-                {/* FORM FULLY FUNCTIONAL */}
-                <form
-                    className={styles.box}
-                    action="https://formsubmit.co/arenillasr@gmail.com"
-                    method="POST"
-                >
-                    {/* Name */}
+                <form className={styles.box} onSubmit={handleSubmit}>
                     <p className={styles.inputTitle}>Name</p>
                     <input
                         className={styles.input}
@@ -42,7 +54,6 @@ export default function Contact() {
                         required
                     />
 
-                    {/* Email */}
                     <p className={styles.inputTitle}>Email Address</p>
                     <input
                         className={styles.input}
@@ -52,7 +63,6 @@ export default function Contact() {
                         required
                     />
 
-                    {/* Message */}
                     <p className={styles.inputTitle}>Your Message</p>
                     <textarea
                         className={styles.input}
@@ -62,17 +72,17 @@ export default function Contact() {
                         required
                     ></textarea>
 
-                    {/* Hidden fields */}
                     <input type="hidden" name="_captcha" value="false" />
-                    <input
-                        type="hidden"
-                        name="_next"
-                        value="https://portfolio-rocio-arenillas.vercel.app/"
-                    />
 
                     <button type="submit" className={styles.btn}>
                         Say Hello!
                     </button>
+
+                    {sent && (
+                        <p className={styles.successMessage}>
+                            ✔️ Your message has been sent! I’ll get back to you soon 💌
+                        </p>
+                    )}
                 </form>
             </div>
         </section>

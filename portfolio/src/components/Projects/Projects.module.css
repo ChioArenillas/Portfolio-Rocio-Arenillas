@@ -22,20 +22,48 @@
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  justify-content: center;
+  justify-items: center;
   gap: 15px;
   width: 90%;
 }
 
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
 
+.arrow {
+  background: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 15px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+.pageIndicator{
+  font-weight: bold;
+  margin-top: 15px;
+}
 
 /* ******** SMALL SCREEN *********** */
 
 @media screen and (max-width: 830px){
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .title{
         font-size: var(--font-size-small-title);
         letter-spacing: 1px;

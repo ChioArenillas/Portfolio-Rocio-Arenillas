@@ -5,83 +5,97 @@
   color: inherit;
   cursor: pointer;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 5px;
   border-radius: 10px;
   background: linear-gradient(180deg, #ffff 50%, var(--color-secondary) 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 300px;
-  margin-bottom: 50px;
-  height: 580px;
+  margin-bottom: 20px;
+  min-height: 480px;
 }
-.container:hover{
+
+.container:hover {
   transform: scale(1.06);
 }
 
 .image {
-  margin-bottom: 26px;
-  max-height: 200px;
+  min-height: 200px;
 }
 
 .title {
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-text);
   font-weight: 700;
 }
 
 .description {
-  margin-top: 6px;
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-small-text);
   font-weight: 400;
 }
+
 .skills {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  gap: 8px;
   flex-wrap: wrap;
   list-style: none;
 }
-.skill{
-    width: 70%;
+
+.skill {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
-.list{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+
+.list {
+  display: flex;
+  justify-content: center;
 }
+
 .links {
-  width: 100%;
-  margin-top: 15px;
+  width: 90%;
   display: flex;
   justify-content: right;
 }
-.links:hover{
-    transform: scale(1.06);
+
+.links:hover {
+  transform: scale(1.06);
 
 }
 
 
 /* ************** SMALL SCREEN */
-@media screen and (max-width: 830px){
-    .container{
-        max-width: 250px;
-        height: 500px;
-    }
-    .title {
-        font-size: var(--font-size-small-title);
-        }
-        .description {
-        margin-top: 4px;
-        font-size: var(--font-size-small-text);
-        }
-        .skill{
-            width: 60%;
-        }
-        .icons {
-            width: 70%;
-        }
+@media screen and (max-width: 830px) {
+  .container {
+    max-width: 250px;
+    min-height: 320px;
+  }
 
-        }
+  .title {
+    font-size: var(--font-size-small-text);
+  }
+
+  .description {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+
+  .image {
+    min-height: 120px;
+  }
+
+  .skill {
+    width: 80%;
+  }
+
+  .icons {
+    width: 70%;
+  }
+
+}

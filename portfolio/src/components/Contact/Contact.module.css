@@ -79,6 +79,10 @@
 .btn:hover {
     background: var(--color-dark);
 }
+.successMessage{
+    font-size: var(--font-size-text);
+    font-weight: bold;
+}
 
 /* **********SMALL SCREEN */
 @media screen and (max-width: 830px){
