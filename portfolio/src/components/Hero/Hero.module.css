@@ -90,6 +90,11 @@
   .title {
       letter-spacing: 1 !important;
     }
+    .subtitle{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
   }
 }
