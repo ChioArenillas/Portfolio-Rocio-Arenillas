@@ -93,8 +93,7 @@
     }
     .subtitle{
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      text-wrap: wrap;
     }
 
   }
