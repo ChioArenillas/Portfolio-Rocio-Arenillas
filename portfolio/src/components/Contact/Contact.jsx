@@ -14,9 +14,9 @@ export default function Contact() {
                 <div className={styles.text}>
                     <div className={styles.socials}>
                         <a href="https://github.com/ChioArenillas" target="_blank" rel="noopener noreferrer">
-                            <img src={github} alt="github" /></a>
+                            <img className={styles.social} src={github} alt="github" /></a>
                         <a href="https://www.linkedin.com/in/roc%C3%ADo-arenillas-627813279/" target="_blank" rel="noopener noreferrer">
-                            <img src={linkedin} alt="linkedin" /></a>
+                            <img className={styles.social} src={linkedin} alt="linkedin" /></a>
                     </div>
                     <p>I’d love to hear from you! </p>
                     <p>Whether you have a brilliant idea, a random thought, or just want to say hi.  </p>

@@ -29,7 +29,9 @@
     margin-right: 10%;
     font-size: 18px;
 }
-
+.social:hover {
+    transform: scale(1.06);
+}
 .text {
     flex: 1;
     display: flex;

@@ -23,13 +23,13 @@ export default function About() {
         </div>
         <div className={styles.btnsection}>
             <div>
-             <a className={styles.button} href="https://chioarenillas.github.io/CV/">Download CV</a>
+             <a className={styles.btn} href="https://chioarenillas.github.io/CV/">Download CV</a>
             </div>
             <div className={styles.socials}>
               <a href="https://github.com/ChioArenillas" target="_blank" rel="noopener noreferrer">
-              <img src={github} alt="github" /></a>       
+              <img className={styles.social} src={github} alt="github" /></a>       
               <a href="https://www.linkedin.com/in/roc%C3%ADo-arenillas-627813279/" target="_blank" rel="noopener noreferrer">
-              <img src={linkedin} alt="linkedin" /></a>        
+              <img className={styles.social} src={linkedin} alt="linkedin" /></a>        
             </div>
           </div>
         </div>

@@ -40,17 +40,22 @@
     align-items: center;
     margin-bottom: 20px;
 }
-.button {
-    align-self: center;
+.btn {
+    width: fit-content;
+    margin-left: auto;
     padding: 14px;
-    margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
-    text-decoration: none;
-    background: var(--color-secondary) ;
+    background: var(--color-secondary);
     color: var(--color-text-light);
     border-radius: 8px;
     cursor: pointer;
+    border-color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: var(--color-dark);
 }
 .socials{
     display: flex;
@@ -58,6 +63,9 @@
     gap: 15px;
     fill: var(--color-text-dark);
     cursor: pointer;
+}
+.social:hover {
+    transform: scale(1.06);
 }
     
 .aboutImg{

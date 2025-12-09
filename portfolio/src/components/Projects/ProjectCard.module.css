@@ -38,8 +38,8 @@
 }
 .skills {
   width: 100%;
-  margin-top: 14px;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
@@ -48,8 +48,9 @@
     width: 70%;
 }
 .list{
-    margin: -5px;
-    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 .links {
   width: 100%;
