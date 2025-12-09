@@ -96,4 +96,10 @@
         display: flex;
         z-index: 1;
     }
+  @media (max-width: 700px) {
+        .menuBtn {
+        margin-top: -8px;
+    }
+
+}
 }
