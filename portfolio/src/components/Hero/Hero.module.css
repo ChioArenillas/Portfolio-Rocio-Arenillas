@@ -55,13 +55,13 @@
   text-align: center;
 }
 
-.codeTitle {
+/* .codeTitle {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-
+ */
   @media (max-width: 1200px) {
     .text {
       gap: 200px;

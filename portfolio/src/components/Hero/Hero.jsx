@@ -13,9 +13,7 @@ export default function Hero() {
                 <p className={styles.subtitle}>UX UI designer</p>
             </div>
             <div className={styles.textRight}>
-              <div className={styles.codeTitle}>
                 <h2 className={styles.title}>&lt;CODE/&gt;</h2>
-              </div>
               <p className={styles.subtitle}>Frontend developer</p>
             </div>          
         </div>      
