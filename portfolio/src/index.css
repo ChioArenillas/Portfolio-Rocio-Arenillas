@@ -10,5 +10,8 @@
 #Projects,
 #Contact {
   scroll-margin-top: 70px;
-  scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+
 }
