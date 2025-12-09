@@ -29,6 +29,10 @@
     margin-right: 10%;
     font-size: var(--font-size-text);
 }
+.socials{
+    display: flex;
+    gap: 10px;
+}
 .social:hover {
     transform: scale(1.06);
 }
