@@ -22,8 +22,8 @@ export default function About() {
                 &lt;/p&gt;</p>
         </div>
         <div className={styles.btnsection}>
-            <div>
-             <a className={styles.btn} href="https://chioarenillas.github.io/CV/">Download CV</a>
+            <div className={styles.btn} >
+             <a className={styles.download} href="https://chioarenillas.github.io/CV/">Download CV</a>
             </div>
             <div className={styles.socials}>
               <a href="https://github.com/ChioArenillas" target="_blank" rel="noopener noreferrer">

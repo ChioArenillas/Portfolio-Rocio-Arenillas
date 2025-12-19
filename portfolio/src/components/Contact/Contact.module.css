@@ -1,23 +1,9 @@
 @import "../../vars.css";
+@import "../../index.css";
 
 .container {
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.titleBackground {
-    background-color: var(--color-dark);
-}
-
-.title {
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px 0;
-    font-size: var(--font-size-title);
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
 }
 
 .content {
@@ -66,23 +52,6 @@
     border-color: var(--color-secondary);
 }
 
-
-.btn {
-    width: fit-content;
-    margin-left: auto;
-    padding: 14px;
-    font-size: var(--font-size-text);
-    font-weight: bold;
-    background: var(--color-secondary);
-    color: var(--color-text-light);
-    border-radius: 8px;
-    cursor: pointer;
-    border-color: var(--color-secondary);
-}
-
-.btn:hover {
-    background: var(--color-dark);
-}
 .successMessage{
     font-size: var(--font-size-text);
     font-weight: bold;
@@ -95,10 +64,6 @@
         font-size: var(--font-size-small-text);
 
     }
-    .title{
-        font-size: var(--font-size-small-title);
-        letter-spacing: 1px;
-    }
     .box{
         width: 100%;
     }
@@ -109,8 +74,5 @@
         font-size: var(--font-size-small-text);
     }
 
-    .btn {
-        font-size: var(--font-size-small-text);
-    }
 
 }

@@ -1,22 +1,10 @@
 @import "../../vars.css";
+@import "../../index.css";
 
 .container {
     margin-top: 30px;
 }
 
-.titleBackground {
-    background-color: var(--color-dark);
-}
-
-.title {
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    font-size: var(--font-size-title);
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
 
 /* ---------- SLIDER ---------- */
 
@@ -90,10 +78,6 @@
 /* ******** SMALL SCREEN *********** */
 
 @media screen and (max-width: 830px){
-    .title{
-        font-size: var(--font-size-small-title);
-        letter-spacing: 1px;
-    }
     .logo{
         width: 70%;
     }

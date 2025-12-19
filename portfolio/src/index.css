@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode',  Verdana,  "Roboto Condensed", sans-serif;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, "Roboto Condensed", sans-serif;
 }
 
 #About,
@@ -11,7 +11,64 @@
 #Contact {
   scroll-margin-top: 70px;
 }
-html{
-    scroll-behavior: smooth;
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+.titleBackground {
+  background-color: var(--color-dark);
+}
+
+.title {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.download{
+  text-decoration: none;
+  color: var(--color-text-light);
+}
+.btn {
+  width: fit-content;
+  margin-left: auto;
+  padding: 14px;
+  font-size: var(--font-size-text);
+  font-weight: bold;
+  background: var(--color-secondary);
+  color: var(--color-text-light);
+  border-radius: 8px;
+  cursor: pointer;
+  border-color: var(--color-secondary);
+  border-width: 2px;
+  border-style: outset;
+}
+
+.btn:hover {
+  background: var(--color-dark);
+  transform: scale(1.1);
+}
+.btn a:hover {
+  background: var(--color-dark);
+  transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 830px) {
+  .title {
+    font-size: var(--font-size-small-title);
+    letter-spacing: 1px;
+  }
+
+  .btn {
+    font-size: var(--font-size-small-text);
+  }
 
 }
