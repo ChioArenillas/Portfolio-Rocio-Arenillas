@@ -1,13 +1,13 @@
 @import "../../vars.css";
 
-.navbarBg{
+.navbarBg {
     background-color: var(--color-dark);
     margin-top: 10px;
     margin-bottom: 10px;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 10;
-}    
+}
 
 .navbar {
     position: relative;
@@ -26,23 +26,35 @@
     text-decoration: none;
     color: var(--color-text-light);
 }
-.menuBtn{
+
+.title:hover {
+    color: var(--color-text-dark);
+}
+
+.menuBtn {
     display: none;
 }
+
 .menu {
     display: flex;
 }
+
 .menuItems {
     display: flex;
     gap: 47px;
     list-style: none;
 }
-    .menuItems a {
-        text-decoration: none;
-        color: var(--color-text-light);
-    }
 
-.menu  {
+.menuItems a {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+.menuItems a:hover {
+    color: var(--color-text-dark);
+}
+
+.menu {
     font-size: var(--font-size-text);
     color: var(--color-text-light);
     text-decoration: none;
@@ -50,56 +62,65 @@
 
 /* ******** SMALL SCREEN *********** */
 
-@media screen and (max-width: 830px){
-    .navbar{
+@media screen and (max-width: 830px) {
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
 
     }
-    .title{
+
+    .title {
         font-size: var(--font-size-small-title);
     }
-    .menu{
+
+    .menu {
         position: absolute;
         font-size: var(--font-size-small-text);
         right: 0;
         flex-direction: column;
         align-items: flex-end;
         gap: 11px;
-        z-index: 3; 
-       }
+        z-index: 3;
+    }
+
     .menuBtn {
         display: block;
         cursor: pointer;
         margin-top: -6px;
     }
-    .menuItems{
+
+    .menuItems {
         display: none;
         flex-direction: column;
         align-items: center;
         gap: 13px;
         border-radius: 10px;
         background-color: rgb(81, 181, 174);
-        background: linear-gradient(
-            0deg,
-            rgba(201, 201, 202, 0.747) 0%,
-            var(--color-dark) 100%
-        );
+        background: linear-gradient(0deg,
+                rgba(201, 201, 202, 0.747) 0%,
+                var(--color-dark) 100%);
         padding: 22px 30px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }
+
     .menuItems a {
         text-decoration: none;
         color: var(--color-text-light);
     }
-    .menuOpen{
+
+    .menuItems:hover {
+        color: var(--color-text-dark);
+    }
+
+    .menuOpen {
         display: flex;
         z-index: 1;
     }
-  @media (max-width: 700px) {
-        .menuBtn {
-        margin-top: -9px;
-    }
 
-}
+    @media (max-width: 700px) {
+        .menuBtn {
+            margin-top: -9px;
+        }
+
+    }
 }
