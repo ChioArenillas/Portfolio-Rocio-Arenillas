@@ -30,23 +30,20 @@
 }
 
 .pagination {
+  color: var(--color-text-light);
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
+  padding: 20px;
 }
 
 .arrow {
-  background: var(--color-secondary);
-  color: white;
+  background: var(--color-dark);
+  color: var(--color-text-light);
   border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
   font-size: 24px;
   cursor: pointer;
-  margin: 0 15px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  margin: 10px 15px;
   transition: transform 0.2s ease;
 }
 

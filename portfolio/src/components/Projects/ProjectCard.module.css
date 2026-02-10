@@ -12,7 +12,7 @@
   justify-content: space-between;
   gap: 5px;
   border-radius: 10px;
-  background: linear-gradient(180deg, #ffff 50%, var(--color-secondary) 100%);
+  background: var(--color-bg);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 300px;

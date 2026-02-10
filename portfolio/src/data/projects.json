@@ -1,4 +1,12 @@
 [
+      {
+    "title": "GoRural Website",
+    "imageSrc": "GoRural.png",
+    "description": "Designed and developed the GoRural web experience using React, translating a Figma prototype into a fully functional website.",
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "url": "https://go-rural.vercel.app/",
+    "github": "https://github.com/ChioArenillas/GoRural"
+  },
     {
     "title": "Donuts App",
     "imageSrc": "Donuts.png",
@@ -36,7 +44,7 @@
     "imageSrc": "App.png",
     "description": "Designed a mobile app prototype in Figma to simplify the process of discovering and reserving activities.",
     "icons": ["figma.png"],
-    "url": "https://www.figma.com/proto/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?page-id=293%3A3175&node-id=293-3194&p=f&viewport=326%2C51%2C0.04&t=WhhkFQ6UQXHIeZ7O-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=293%3A3194",
+    "url": "https://www.figma.com/proto/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?page-id=1%3A2&node-id=32-4062&p=f&viewport=307%2C89%2C0.61&t=S30E48B3prgLT9ZH-1&scaling=scale-down&content-scaling=responsive&starting-point-node-id=32%3A4062",
     "figma": "https://www.figma.com/design/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?node-id=0-1&t=kcqRBVuQsUqc2Ngd-1"
   },
     {
