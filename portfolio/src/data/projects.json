@@ -3,7 +3,7 @@
     "title": "GoRural Website",
     "imageSrc": "GoRural.png",
     "description": "Designed and developed the GoRural web experience using React, translating a Figma prototype into a fully functional website.",
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "nextjs.png"],
     "url": "https://go-rural.vercel.app/",
     "github": "https://github.com/ChioArenillas/GoRural"
   },
@@ -27,7 +27,7 @@
     "title": "Pokemon App",
     "imageSrc": "pokemonapp.png",
     "description": "Build a multi-page Pokémon web application with detailed Pokémon information, using Next.js for the frontend and server-side functionality.",
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "nextjs.png"],
     "url": "https://app-pokemon-five.vercel.app/",
     "github": "https://github.com/ChioArenillas/AppPokemon.git"
   },  
