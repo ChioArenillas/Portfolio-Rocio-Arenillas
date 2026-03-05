@@ -23,6 +23,15 @@
     "url": "https://chioarenillas.github.io/Proyecto/",
     "github": "https://github.com/ChioArenillas/Proyecto.git"
   },
+    {
+    "title": "Chef Claude",
+    "imageSrc": "ChefClaude.png",
+    "description": "A React app where users add ingredients to a list, and AI generates a complete recipe based on them.",
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "url": "https://chef-claude-bice.vercel.app/",
+    "github": "https://github.com/ChioArenillas/ChefClaude.git"
+  },  
+
   {
     "title": "Pokemon App",
     "imageSrc": "pokemonapp.png",
