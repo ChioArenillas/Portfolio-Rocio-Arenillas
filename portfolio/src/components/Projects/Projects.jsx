@@ -11,7 +11,7 @@ export const Projects = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 830) {
-        setCardsPerPage(4); 
+        setCardsPerPage(5); 
       } else {
         setCardsPerPage(9); 
       }
