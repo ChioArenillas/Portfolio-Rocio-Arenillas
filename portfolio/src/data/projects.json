@@ -39,6 +39,22 @@
     "icons": ["HTML.png","css.png", "javascript.png", "react.png", "nextjs.png"],
     "url": "https://app-pokemon-five.vercel.app/",
     "github": "https://github.com/ChioArenillas/AppPokemon.git"
+  }, 
+  {
+    "title": "Assembly Engame",
+    "imageSrc": "AssemblyEndgame.png",
+    "description": "A classic Hangman game where players guess a hidden word by selecting letters. Each incorrect guess brings them closer to losing the game.",
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "url": "https://assembly-endgame-nine-mu.vercel.app/",
+    "github": "https://github.com/ChioArenillas/AssemblyEndgame"
+  },  
+    {
+    "title": "Budget App",
+    "imageSrc": "BudgetApp.png",
+    "description": "A budgeting app that allows users to add and manage their income and expenses. The application calculates the balance and generates a clear overview of the user's budget.",
+    "icons": ["HTML.png","css.png", "javascript.png"],
+    "url": "https://budget-app-neon-two.vercel.app/",
+    "github": "https://github.com/ChioArenillas/BudgetApp"
   },  
   {
     "title": "Blackjack Game",
@@ -47,7 +63,25 @@
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://black-jack-app-one.vercel.app/",
     "github": "https://github.com/ChioArenillas/BlackJackApp.git"
+  }, 
+
+      {
+    "title": "Meme Generator",
+    "imageSrc": "MemeGenerator.png",
+    "description": "A React application that allows users to input text which is overlaid onto a randomly fetched image from an API, generating a customized image dynamically.", 
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "url": "https://meme-generator-dusky-zeta.vercel.app/",
+    "github": "https://github.com/ChioArenillas/MemeGenerator"
   },  
+    {
+    "title": "Tenzies",
+    "imageSrc": "Tenzies.png",
+    "description": "A JavaScript dice game where players roll numbers randomly and click on them to hold their values until all numbers match.",
+    "icons": ["HTML.png","css.png", "javascript.png"],
+    "url": "https://tenzies-delta-one.vercel.app/",
+    "github": "https://github.com/ChioArenillas/Tenzies"
+  },  
+
   {
     "title": "Activity Booking App",
     "imageSrc": "App.png",
@@ -64,6 +98,7 @@
     "url": "https://films-data-base.vercel.app/",
     "github": "https://github.com/ChioArenillas/Films-Data-Base.git"
   },
+
     {
     "title": "Movie Data Page",
     "imageSrc": "MovieData.png",
