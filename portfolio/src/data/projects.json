@@ -43,7 +43,7 @@
     {
     "title": "Budget App",
     "imageSrc": "BudgetApp.png",
-    "description": "A budgeting app that allows users to add and manage their income and expenses. The application calculates the balance and generates a clear overview of the user's budget.",
+    "description": "A budgeting app that allows users to add and manage their income and expenses. The app calculates the balance and generates a overview of the budget.",
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://budget-app-neon-two.vercel.app/",
     "github": "https://github.com/ChioArenillas/BudgetApp"
@@ -76,7 +76,7 @@
       {
     "title": "Cards War",
     "imageSrc": "CardsWar.png",
-    "description": "A card game that uses an external API to generate a random deck. In each round, the player and the computer draw cards and their values are added to their scores. The player with the highest total score wins the game.",
+    "description": "A card game that uses an external API to generate a random deck. The player and the computer draw cards and their values are added to their scores.",
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://cards-war-liart.vercel.app/",
     "github": "https://github.com/ChioArenillas/CardsWar"
