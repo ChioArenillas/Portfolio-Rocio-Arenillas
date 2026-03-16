@@ -73,6 +73,15 @@
     "url": "https://tenzies-delta-one.vercel.app/",
     "github": "https://github.com/ChioArenillas/Tenzies"
   },  
+      {
+    "title": "Cards War",
+    "imageSrc": "CardsWar.png",
+    "description": "A card game that uses an external API to generate a random deck. In each round, the player and the computer draw cards and their values are added to their scores. The player with the highest total score wins the game.",
+    "icons": ["HTML.png","css.png", "javascript.png"],
+    "url": "https://cards-war-liart.vercel.app/",
+    "github": "https://github.com/ChioArenillas/CardsWar"
+  },  
+
      {
     "title": "Films selector",
     "imageSrc": "dataFilms.png",
