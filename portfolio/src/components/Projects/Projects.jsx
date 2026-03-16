@@ -6,18 +6,18 @@ import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
-  const [cardsPerPage, setCardsPerPage] = useState(6); // valor por defecto
+  const [cardsPerPage, setCardsPerPage] = useState(9); 
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 830) {
-        setCardsPerPage(3); // 👉 en móvil solo 3 tarjetas
+        setCardsPerPage(4); 
       } else {
-        setCardsPerPage(6); // 👉 escritorio: 3 por fila * 2 filas
+        setCardsPerPage(9); 
       }
     };
 
-    handleResize(); // ejecutar al cargar
+    handleResize(); 
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
