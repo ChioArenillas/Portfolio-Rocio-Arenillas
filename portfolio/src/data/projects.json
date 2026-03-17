@@ -48,6 +48,15 @@
     "url": "https://budget-app-neon-two.vercel.app/",
     "github": "https://github.com/ChioArenillas/BudgetApp"
   },  
+    {
+    "title": "Dashboard",
+    "imageSrc": "Dashboard.png",
+    "description": "A real-time dashboard displaying live data from APIs including Bitcoin, weather, location, and date. All updated dynamically.",
+    "icons": ["HTML.png","css.png", "javascript.png"],
+    "url": "https://dashboard-psi-sandy-55.vercel.app/",
+    "github": "https://github.com/ChioArenillas/Dashboard"
+  }, 
+
   {
     "title": "Blackjack Game",
     "imageSrc": "Blackjack.png",
