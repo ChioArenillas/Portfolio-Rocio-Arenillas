@@ -25,7 +25,7 @@ export default function Contact() {
     return (
         <section className={styles.container} id='Contact'>
             <div className={styles.titleBackground}>
-                <h1 className={styles.title}>&lt;Contact/&gt;</h1>
+                <h1 className={styles.title}>&lt; Contact /&gt;</h1>
             </div>
 
             <div className={styles.content}>

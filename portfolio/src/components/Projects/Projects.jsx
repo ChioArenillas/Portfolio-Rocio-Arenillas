@@ -43,7 +43,7 @@ export const Projects = () => {
   return (
     <section className={styles.container} id="projects">
       <div className={styles.titleBackground}>
-        <h2 className={styles.title}>Projects</h2>
+        <h2 className={styles.title}>&lt; Projects /&gt; </h2>
       </div>
 
       <div className={styles.projectsBackground}>

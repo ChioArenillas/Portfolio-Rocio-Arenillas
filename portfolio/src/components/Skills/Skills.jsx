@@ -82,7 +82,7 @@ export default function Skills() {
   return (
     <section className={styles.container} id="Skills">
       <div className={styles.titleBackground}>
-        <h1 className={styles.title}>SKILLS & TOOLS</h1>
+        <h1 className={styles.title}>&lt; SKILLS & TOOLS /&gt; </h1>
       </div>
 
       <div className={styles.slider} ref={sliderRef}>
