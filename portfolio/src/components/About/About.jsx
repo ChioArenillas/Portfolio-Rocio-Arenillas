@@ -9,17 +9,19 @@ export default function About() {
     <section className={styles.container} id='About'>
       <div className={styles.content}>
         <div >
-          <h1 className={styles.title}>&lt;Holaa! I’m Chio, 👋/&gt;</h1>
-          <p className={styles.description}>&lt;p&gt; I’m a 
+          <h1 className={styles.title}>&lt; Holaa! I’m Chio, 👋/&gt;</h1>
+          <p className={styles.description}>
+            <span className={styles.colorText}>&lt;p&gt;</span> I’m a 
                 <span className={styles.colorText}> Web Designer </span>
                 & <span className={styles.colorText}> Front-End Developer </span> 
-                based in Madrid. I love bringing ideas to life online through sleek, responsive, and user-focused websites. My goal is to create digital experiences that not only look beautiful but also feel intuitive and engaging for every user.
-                &lt;/p&gt;</p>
-          <p className={styles.description}>&lt;p&gt; Coming from a background in 
+                based in Madrid. I love bringing ideas to life online through sleek, responsive, and user-focused websites. My goal is to create digital experiences that not only look beautiful but also feel intuitive and engaging for every user. 
+                <span className={styles.colorText}> &lt;/p&gt;</span> </p>
+          <p className={styles.description}>
+           <span className={styles.colorText}>&lt;p&gt;</span> Coming from a background in 
                 <span className={styles.colorText}> Psychology </span> and 
                 <span className={styles.colorText}> Art Therapy, </span> 
                 along with experience in team and personnel management, I bring a unique perspective to design and development. This mix helps me understand both user behaviour and human-centre design, while also giving me strong organizational and collaborative skills.
-                &lt;/p&gt;</p>
+               <span className={styles.colorText}> &lt;/p&gt; </span> </p>
         </div>
         <div className={styles.btnsection}>
             <div className={styles.btn} >
