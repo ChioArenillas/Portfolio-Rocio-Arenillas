@@ -57,14 +57,6 @@
     "github": "https://github.com/ChioArenillas/Dashboard"
   }, 
 
-  {
-    "title": "Blackjack Game",
-    "imageSrc": "Blackjack.png",
-    "description": "Developed an interactive Blackjack game with button-driven gameplay, implementing game logic and user interactions using JavaScript.",
-    "icons": ["HTML.png","css.png", "javascript.png"],
-    "url": "https://black-jack-app-one.vercel.app/",
-    "github": "https://github.com/ChioArenillas/BlackJackApp.git"
-  }, 
 
       {
     "title": "Meme Generator",
@@ -90,6 +82,14 @@
     "url": "https://cards-war-liart.vercel.app/",
     "github": "https://github.com/ChioArenillas/CardsWar"
   },  
+    {
+    "title": "Blackjack Game",
+    "imageSrc": "Blackjack.png",
+    "description": "Developed an interactive Blackjack game with button-driven gameplay, implementing game logic and user interactions using JavaScript.",
+    "icons": ["HTML.png","css.png", "javascript.png"],
+    "url": "https://black-jack-app-one.vercel.app/",
+    "github": "https://github.com/ChioArenillas/BlackJackApp.git"
+  }, 
 
      {
     "title": "Films selector",
