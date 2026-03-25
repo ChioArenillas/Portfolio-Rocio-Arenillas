@@ -1,36 +1,38 @@
 # Portfolio Rocío Arenillas
 
-🧩 **Description**
-This is a personal portfolio website designed to showcase projects, skills, and experience in web development. It provides a clean and modern interface where visitors can explore work, learn more about the developer, and easily navigate through different sections.
+## 🧩 Description
 
-The goal of this project is to present a professional online presence while applying solid frontend fundamentals using vanilla technologies.
+This is a personal portfolio website designed to showcase projects, skills, and experience in web development. It allows visitors to explore different projects, learn more about the developer, and navigate through the content in a clear and intuitive way.
 
-🚀 **Live Demo**
+The project focuses on building a clean and responsive interface using core frontend technologies without relying on frameworks.
+
+## 🚀 Live Demo
+
 https://portfolio-rocio-arenillas.vercel.app/
 
-🚀 **Technologies**
+## 🚀 Technologies
 
 * HTML5
 * CSS3
 * JavaScript (ES6+)
 
-🎯 **Features**
+## 🎯 Features
 
 * Project showcase with interactive elements
 * Clean and modern UI design
 * Smooth navigation between sections
-* Responsive layout for different devices
-* Lightweight and fast performance (no frameworks)
+* Fully responsive layout
+* Lightweight performance without frameworks
 
-🧠 **Key Concepts**
+## 🧠 Key Concepts
 
 * DOM manipulation with JavaScript
 * Event handling
-* Responsive design with CSS
+* Responsive design
 * Semantic HTML structure
-* Separation of structure, style, and logic
+* Separation of concerns (structure, style, logic)
 
-📦 **Installation**
+## 📦 Installation
 
 ```bash
 git clone https://github.com/ChioArenillas/Portfolio-Rocio-Arenillas
@@ -38,5 +40,6 @@ cd Portfolio-Rocio-Arenillas/portfolio
 open index.html
 ```
 
-📌 **Project Status**
+## 📌 Project Status
+
 Completed
