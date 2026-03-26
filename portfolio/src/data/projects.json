@@ -21,7 +21,7 @@
     "imageSrc": "Donuts.png",
     "description": "Developed an interactive Donuts App. Using React and Redux to add, delete, create Donuts in a backend online database.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png", "redux.png"],
-    "url": "https://donuts-app-chi.vercel.app/",
+    "url": "https://donuts-app-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/DonutsApp"
   },
     {
