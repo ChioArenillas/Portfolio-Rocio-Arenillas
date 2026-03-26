@@ -4,7 +4,7 @@
     "imageSrc": "VanLife.png",
     "description": "Web app built with React and Firebase, featuring a fully functional database, a client login simulator with authentication and user dashboard panel.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
-    "url": "https://van-life-gray.vercel.app/",
+    "url": "https://van-life-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/VanLife"
   },
 
