@@ -2,7 +2,7 @@
         {
     "title": "VANLIFE Website",
     "imageSrc": "VanLife.png",
-    "description": "Web app built with Firebase, featuring a functional database, a client login simulator with authentication and user dashboard panel.",
+    "description": "Built with Firebase, featuring a functional database, a client login simulator with authentication and user dashboard panel.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
     "url": "https://van-life-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/VanLife"
