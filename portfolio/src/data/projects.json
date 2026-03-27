@@ -70,8 +70,8 @@
       {
     "title": "Meme Generator",
     "imageSrc": "MemeGenerator.png",
-    "description": "A React application that allows users to input text which is overlaid onto a randomly fetched image from an API, generating a customized image dynamically.", 
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "description": "A React application that allows users to input text which is overlaid onto a randomly fetched image from an API. Includes testing with Vitest.",
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "vitest.png"],
     "url": "https://meme-generator-dusky-zeta.vercel.app/",
     "github": "https://github.com/ChioArenillas/MemeGenerator"
   },  
