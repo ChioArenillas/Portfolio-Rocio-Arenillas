@@ -38,5 +38,10 @@
     {
         "title": "Redux",
         "imageSrc": "redux.png"
+    },
+    {
+        "title": "Vitest",
+        "imageSrc": "vitest.png"
     }
+
 ]

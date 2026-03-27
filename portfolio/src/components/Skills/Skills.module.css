@@ -49,7 +49,8 @@
 }
 
 .logo {
-    width: 85%;
+  width: 52px;
+  height: 64px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
