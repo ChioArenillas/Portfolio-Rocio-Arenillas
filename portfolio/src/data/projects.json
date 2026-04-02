@@ -74,7 +74,16 @@
     "icons": ["HTML.png","css.png", "javascript.png", "react.png", "vitest.png"],
     "url": "https://meme-generator-dusky-zeta.vercel.app/",
     "github": "https://github.com/ChioArenillas/MemeGenerator"
+  }, 
+  {
+    "title": "MemoryGame",
+    "imageSrc": "MemoryGame.png",
+    "description": "An accessible React app where users select the number and type of cards. Emojis are fetched from an API, with a strong focus on accessibility.",
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "url": "https://tenzies-delta-one.vercel.app/",
+    "github": "https://github.com/ChioArenillas/MemoryGame"
   },  
+ 
     {
     "title": "Tenzies",
     "imageSrc": "Tenzies.png",
