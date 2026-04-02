@@ -50,13 +50,21 @@
     "url": "https://app-pokemon-five.vercel.app/",
     "github": "https://github.com/ChioArenillas/AppPokemon.git"
   }, 
+  {
+    "title": "Meme Generator",
+    "imageSrc": "MemeGenerator.png",
+    "description": "A React application that allows users to input text which is overlaid onto a randomly fetched image from an API. Includes testing with Vitest.",
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "vitest.png"],
+    "url": "https://meme-generator-dusky-zeta.vercel.app/",
+    "github": "https://github.com/ChioArenillas/MemeGenerator"
+  }, 
     {
-    "title": "Budget App",
-    "imageSrc": "BudgetApp.png",
-    "description": "A budgeting app that allows users to add and manage their income and expenses. The app calculates the balance and generates a overview of the budget.",
-    "icons": ["HTML.png","css.png", "javascript.png"],
-    "url": "https://budget-app-neon-two.vercel.app/",
-    "github": "https://github.com/ChioArenillas/BudgetApp"
+    "title": "MemoryGame",
+    "imageSrc": "MemoryGame.png",
+    "description": "An accessible React app where users select the number and type of cards. Emojis are fetched from an API, with a strong focus on accessibility.",
+    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "url": "https://memory-game-two-eta-84.vercel.app/",
+    "github": "https://github.com/ChioArenillas/MemoryGame"
   },  
     {
     "title": "Dashboard",
@@ -66,25 +74,14 @@
     "url": "https://dashboard-psi-sandy-55.vercel.app/",
     "github": "https://github.com/ChioArenillas/Dashboard"
   }, 
-
-
-      {
-    "title": "Meme Generator",
-    "imageSrc": "MemeGenerator.png",
-    "description": "A React application that allows users to input text which is overlaid onto a randomly fetched image from an API. Includes testing with Vitest.",
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "vitest.png"],
-    "url": "https://meme-generator-dusky-zeta.vercel.app/",
-    "github": "https://github.com/ChioArenillas/MemeGenerator"
-  }, 
-  {
-    "title": "MemoryGame",
-    "imageSrc": "MemoryGame.png",
-    "description": "An accessible React app where users select the number and type of cards. Emojis are fetched from an API, with a strong focus on accessibility.",
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
-    "url": "https://memory-game-two-eta-84.vercel.app/",
-    "github": "https://github.com/ChioArenillas/MemoryGame"
+    {
+    "title": "Budget App",
+    "imageSrc": "BudgetApp.png",
+    "description": "A budgeting app that allows users to add and manage their income and expenses. The app calculates the balance and generates a overview of the budget.",
+    "icons": ["HTML.png","css.png", "javascript.png"],
+    "url": "https://budget-app-neon-two.vercel.app/",
+    "github": "https://github.com/ChioArenillas/BudgetApp"
   },  
- 
     {
     "title": "Tenzies",
     "imageSrc": "Tenzies.png",
