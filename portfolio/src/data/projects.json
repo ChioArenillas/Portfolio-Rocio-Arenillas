@@ -25,7 +25,7 @@
     "github": "https://github.com/ChioArenillas/DonutsApp"
   },
     {
-    "title": "Assembly Engame",
+    "title": "Assembly Endgame",
     "imageSrc": "AssemblyEndgame.png",
     "description": "A classic Hangman game where players guess a hidden word by selecting letters. Each incorrect guess brings them closer to losing the game.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
