@@ -25,12 +25,12 @@
     "github": "https://github.com/ChioArenillas/DonutsApp"
   },
     {
-    "title": "Assembly Endgame",
-    "imageSrc": "AssemblyEndgame.png",
-    "description": "A classic Hangman game where players guess a hidden word by selecting letters. Each incorrect guess brings them closer to losing the game.",
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
-    "url": "https://assembly-endgame-nine-mu.vercel.app/",
-    "github": "https://github.com/ChioArenillas/AssemblyEndgame"
+    "title": "Hangman Game",
+    "imageSrc": "HangmanGame.png",
+    "description": "A Hangman game built with TypeScript that leverages game state management and component-based architecture to handle both logic and UI.",
+    "icons": ["HTML.png","css.png", "Typescript.png", "react.png"],
+    "url": "https://hangman-game-murex-eight.vercel.app/",
+    "github": "https://github.com/ChioArenillas/HangmanGame"
   },  
 
     {
