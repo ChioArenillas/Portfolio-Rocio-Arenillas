@@ -7,6 +7,14 @@
     "url": "https://van-life-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/VanLife"
   },
+          {
+    "title": "PrintForge Website",
+    "imageSrc": "PrintForge.png",
+    "description": "A 3D printing platform built with Next.js, featuring a dynamic model library, category-based filtering, and a responsive interface.",
+    "icons": ["HTML.png","css.png", "Typescript.png", "react.png", "nextjs.png"],
+    "url": "https://print-forge-lake.vercel.app/",
+    "github": "https://github.com/ChioArenillas/PrintForge"
+  },
 
       {
     "title": "GoRural Website",
