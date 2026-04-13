@@ -41,6 +41,10 @@
     align-items: center;
     margin-bottom: 20px;
 }
+.cv{
+    display: flex;
+    gap: 5px;
+}
 .btn{
     margin-left: 0;
 }
@@ -88,6 +92,11 @@
     .content{
         align-items: center;
     }
+    .cv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
     .title{
         font-size: var(--font-size-small-title);
         letter-spacing: 1px;

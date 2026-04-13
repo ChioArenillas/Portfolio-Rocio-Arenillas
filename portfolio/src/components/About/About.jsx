@@ -24,9 +24,20 @@ export default function About() {
                <span className={styles.colorText}> &lt;/p&gt; </span> </p>
         </div>
         <div className={styles.btnsection}>
+          <div className={styles.cv}>
             <div className={styles.btn} >
-             <a className={styles.download} href="https://chioarenillas.github.io/CV/">Download CV</a>
+             <a className={styles.download} 
+             href="/cv/CV-Rocio-Arenillas-ENG.pdf"
+             target="_blank"
+             >Download CV</a>
             </div>
+            <div className={styles.btn} >
+             <a className={styles.download} 
+             href="/cv/Cover-Letter-Rocio-Arenillas-ENG.pdf"
+             target="_blank"
+             >Cover Letter</a>
+            </div>
+          </div>
             <div className={styles.socials}>
               <a href="https://github.com/ChioArenillas" target="_blank" rel="noopener noreferrer">
               <img className={styles.social} src={github} alt="github" /></a>       
