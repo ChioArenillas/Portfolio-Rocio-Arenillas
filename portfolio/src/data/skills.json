@@ -4,12 +4,16 @@
         "imageSrc": "figma.png"
     },
     {
-        "title": "GitHub",
-        "imageSrc": "github.png"
-    },
-    {
         "title": "VisualCode",
         "imageSrc": "VScode.png"
+    },
+    {
+        "title": "git",
+        "imageSrc": "git.png"
+    },
+    {
+        "title": "GitHub",
+        "imageSrc": "github.png"
     },
     {
         "title": "HTML",
@@ -28,16 +32,16 @@
         "imageSrc": "Typescript.png"
     },
     {
-        "title": "git",
-        "imageSrc": "git.png"
-    },
-    {
         "title": "React",
         "imageSrc": "react.png"
     },
     {
         "title": "Next.js",
         "imageSrc": "nextjs.png"
+    },
+    {
+        "title": "Vue",
+        "imageSrc": "vue.png"
     },
     {
         "title": "Redux",
