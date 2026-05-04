@@ -13,14 +13,14 @@ export default function About() {
           <p className={styles.description}>
             <span className={styles.colorText}>&lt;p&gt;</span> I’m a 
                 <span className={styles.colorText}> Web Designer </span>
-                & <span className={styles.colorText}> Front-End Developer </span> 
-                based in Madrid. I love bringing ideas to life online through sleek, responsive, and user-focused websites. My goal is to create digital experiences that not only look beautiful but also feel intuitive and engaging for every user. 
+                & <span className={styles.colorText}> Frontend Developer and UI-focused designer </span> 
+                based in Madrid, specialized in building responsive and user-centered web applications using React and TypeScript. I enjoy transforming ideas into functional and visually clean digital products with a strong focus on usability and user experience.
                 <span className={styles.colorText}> &lt;/p&gt;</span> </p>
           <p className={styles.description}>
            <span className={styles.colorText}>&lt;p&gt;</span> Coming from a background in 
                 <span className={styles.colorText}> Psychology </span> and 
                 <span className={styles.colorText}> Art Therapy, </span> 
-                along with experience in team and personnel management, I bring a unique perspective to design and development. This mix helps me understand both user behaviour and human-centre design, while also giving me strong organizational and collaborative skills.
+                as well as experience in team coordination and people management, I bring a human-centered perspective to design and development. This helps me better understand user behaviour, improve interface decisions, and work effectively in collaborative environments.
                <span className={styles.colorText}> &lt;/p&gt; </span> </p>
         </div>
         <div className={styles.btnsection}>

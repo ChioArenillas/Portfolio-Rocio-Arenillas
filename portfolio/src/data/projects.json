@@ -1,164 +1,146 @@
 [
-        {
+  {
     "title": "VANLIFE Website",
     "imageSrc": "VanLife.png",
-    "description": "Built with Firebase, featuring a functional database, a client login simulator with authentication and user dashboard panel.",
+    "description": "Built a web application with Firebase authentication, including a user dashboard and full CRUD functionality with persistent data management.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
     "url": "https://van-life-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/VanLife"
   },
-          {
+  {
     "title": "PrintForge Website",
     "imageSrc": "PrintForge.png",
-    "description": "A 3D printing platform built with Next.js, featuring a dynamic model library, category-based filtering, and a responsive interface.",
+    "description": "Developed a 3D printing platform with dynamic content rendering, category-based filtering, and a responsive UI built with a component-based architecture.",
     "icons": ["HTML.png","css.png", "Typescript.png", "react.png", "nextjs.png"],
     "url": "https://print-forge-lake.vercel.app/",
     "github": "https://github.com/ChioArenillas/PrintForge"
   },
-
-      {
+  {
     "title": "GoRural Website",
     "imageSrc": "GoRural.png",
-    "description": "Designed and developed the GoRural web experience using React, translating a Figma prototype into a fully functional website.",
+    "description": "Built the GoRural web experience using React, translating a Figma design into a fully functional and responsive website.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png", "nextjs.png"],
     "url": "https://go-rural.vercel.app/",
     "github": "https://github.com/ChioArenillas/GoRural"
   },
-    {
+  {
     "title": "Donuts App",
     "imageSrc": "Donuts.png",
-    "description": "Developed an interactive Donuts App. Using React and Redux to add, delete, create Donuts in a backend online database.",
+    "description": "Developed a dynamic product management application with React, enabling creation, deletion, and persistence of items in a remote database.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png", "redux.png"],
     "url": "https://donuts-app-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/DonutsApp"
   },
-    {
+  {
     "title": "Hangman Game",
     "imageSrc": "HangmanGame.png",
-    "description": "A Hangman game built with TypeScript that leverages game state management and component-based architecture to handle both logic and UI.",
+    "description": "Built an interactive Hangman game using TypeScript, implementing structured game logic, input validation, and a reusable component architecture.",
     "icons": ["HTML.png","css.png", "Typescript.png", "react.png"],
     "url": "https://hangman-game-murex-eight.vercel.app/",
     "github": "https://github.com/ChioArenillas/HangmanGame"
-  },  
-
-    {
+  },
+  {
     "title": "Chef Claude",
     "imageSrc": "ChefClaude.png",
-    "description": "A React app where users add ingredients to a list, and AI generates a complete recipe based on them.",
+    "description": "Developed a React application that generates recipes based on user-input ingredients, leveraging AI-driven logic for content generation.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
     "url": "https://chef-claude-bice.vercel.app/",
     "github": "https://github.com/ChioArenillas/ChefClaude.git"
-  },  
-
+  },
   {
     "title": "Pokemon App",
     "imageSrc": "pokemonapp.png",
-    "description": "Build a multi-page Pokémon web application with detailed Pokémon information, using Next.js for the frontend and server-side functionality.",
+    "description": "Built a multi-page Pokémon application using Next.js, integrating external API data with structured rendering and navigation between views.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png", "nextjs.png"],
     "url": "https://app-pokemon-five.vercel.app/",
     "github": "https://github.com/ChioArenillas/AppPokemon.git"
-  }, 
+  },
   {
     "title": "Meme Generator",
     "imageSrc": "MemeGenerator.png",
-    "description": "A React application that allows users to input text which is overlaid onto a randomly fetched image from an API. Includes testing with Vitest.",
+    "description": "Developed a React-based meme generator that overlays user text onto dynamically fetched images, including unit testing with Vitest.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png", "vitest.png"],
     "url": "https://meme-generator-dusky-zeta.vercel.app/",
     "github": "https://github.com/ChioArenillas/MemeGenerator"
-  }, 
-    {
-    "title": "MemoryGame",
+  },
+  {
+    "title": "Memory Game",
     "imageSrc": "MemoryGame.png",
-    "description": "An accessible React app where users select the number and type of cards. Emojis are fetched from an API, with a strong focus on accessibility.",
+    "description": "Built an accessible React memory game with configurable settings and API-driven emoji data, focusing on usability and accessibility.",
     "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
     "url": "https://memory-game-two-eta-84.vercel.app/",
     "github": "https://github.com/ChioArenillas/MemoryGame"
-  },  
-    {
+  },
+  {
     "title": "Dashboard",
     "imageSrc": "Dashboard.png",
-    "description": "A real-time dashboard displaying live data from APIs including Bitcoin, weather, location, and date. All updated dynamically.",
+    "description": "Developed a real-time dashboard displaying dynamic data from multiple APIs including weather, Bitcoin, location, and date information.",
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://dashboard-psi-sandy-55.vercel.app/",
     "github": "https://github.com/ChioArenillas/Dashboard"
-  }, 
-    {
+  },
+  {
     "title": "Budget App",
     "imageSrc": "BudgetApp.png",
-    "description": "A budgeting app that allows users to add and manage their income and expenses. The app calculates the balance and generates a overview of the budget.",
+    "description": "Built a budgeting application for managing income and expenses, featuring real-time balance calculation and data overview.",
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://budget-app-neon-two.vercel.app/",
     "github": "https://github.com/ChioArenillas/BudgetApp"
-  },  
-    {
+  },
+  {
     "title": "Tenzies",
     "imageSrc": "Tenzies.png",
-    "description": "A JavaScript dice game where players roll numbers randomly and click on them to hold their values until all numbers match.",
+    "description": "Developed an interactive dice game where players hold values strategically until all numbers match, implementing core game logic in JavaScript.",
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://tenzies-delta-one.vercel.app/",
     "github": "https://github.com/ChioArenillas/Tenzies"
-  },  
-      {
+  },
+  {
     "title": "Cards War",
     "imageSrc": "CardsWar.png",
-    "description": "A card game that uses an external API to generate a random deck. The player and the computer draw cards and their values are added to their scores.",
+    "description": "Built a card game using an external API to generate a deck, where players compete by comparing drawn card values.",
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://cards-war-liart.vercel.app/",
     "github": "https://github.com/ChioArenillas/CardsWar"
-  },  
-    {
+  },
+  {
     "title": "Blackjack Game",
     "imageSrc": "Blackjack.png",
-    "description": "Developed an interactive Blackjack game with button-driven gameplay, implementing game logic and user interactions using JavaScript.",
+    "description": "Developed an interactive Blackjack game with button-driven gameplay and structured game logic using JavaScript.",
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://black-jack-app-one.vercel.app/",
     "github": "https://github.com/ChioArenillas/BlackJackApp.git"
-  }, 
-
-     {
-    "title": "Films selector",
+  },
+  {
+    "title": "Films Selector",
     "imageSrc": "dataFilms.png",
-    "description": "Developed a film searcher page, with selectors, grid and list view and search input. Getting the data from a API.",
+    "description": "Built a movie search application with filtering, grid/list views, and dynamic data fetching from an external API.",
     "icons": ["HTML.png","css.png", "javascript.png"],
     "url": "https://films-data-base.vercel.app/",
     "github": "https://github.com/ChioArenillas/Films-Data-Base.git"
   },
-
   {
     "title": "Activity Booking App",
     "imageSrc": "App.png",
-    "description": "Designed a mobile app prototype in Figma to simplify the process of discovering and reserving activities.",
+    "description": "Designed a mobile app prototype in Figma focused on simplifying activity discovery and booking flows.",
     "icons": ["figma.png"],
     "url": "https://www.figma.com/proto/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?page-id=1%3A2&node-id=32-4062&p=f&viewport=307%2C89%2C0.61&t=S30E48B3prgLT9ZH-1&scaling=scale-down&content-scaling=responsive&starting-point-node-id=32%3A4062",
     "figma": "https://www.figma.com/design/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?node-id=0-1&t=kcqRBVuQsUqc2Ngd-1"
   },
- 
-    {
+  {
     "title": "Movie Website",
     "imageSrc": "web.png",
-    "description": "A website showcasing movie information, built with clean HTML and CSS for a smooth user experience.",
+    "description": "Built a movie information website using semantic HTML and CSS with a focus on clean layout and usability.",
     "icons": ["HTML.png","css.png"],
     "url": "https://chioarenillas.github.io/MovieWebsite/",
     "github": "https://github.com/ChioArenillas/MovieWebsite"
   },
-
-
-    {
+  {
     "title": "Movie Data Page",
     "imageSrc": "MovieData.png",
-    "description": "A movie information page, built with clean HTML and CSS for a smooth user experience.",
+    "description": "Developed a movie details page using HTML and CSS, focusing on structured layout and visual clarity.",
     "icons": ["HTML.png","css.png"],
     "url": "https://chioarenillas.github.io/MovieDetail/",
     "github": "https://github.com/ChioArenillas/MovieDetail"
-  },
-
-  
-{
-    "title": "Booking Confirmation Email",
-    "imageSrc": "email.png",
-    "description": "Created a custom email template for client reservations, designed with HTML and CSS.",
-    "icons": ["HTML.png","css.png"],
-    "url": "https://chioarenillas.github.io/Emails/",
-    "github": "https://github.com/ChioArenillas/Emails.git"
   }
 ]
