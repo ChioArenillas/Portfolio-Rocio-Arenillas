@@ -6,18 +6,18 @@ import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
-  const [cardsPerPage, setCardsPerPage] = useState(9); 
+  const [cardsPerPage, setCardsPerPage] = useState(9);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 830) {
-        setCardsPerPage(5); 
+        setCardsPerPage(5);
       } else {
-        setCardsPerPage(9); 
+        setCardsPerPage(9);
       }
     };
 
-    handleResize(); 
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
@@ -40,34 +40,39 @@ export const Projects = () => {
     setPage((p) => (p - 1 + totalPages) % totalPages);
     document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
   };
-return (
-<section className={`reveal ${styles.container}`} id="Projects">    
-  <div className={styles.projectsBackground}>
-    <div className={styles.header}>
-      <span className={styles.kicker}>Some of my work</span>
-      <h2 className={styles.title}>&lt; Projects /&gt;</h2>
-      <p className={styles.subtitle}>
-        Selected projects I’ve built in frontend and UI design
-      </p>
-    </div>
+  return (
+    <section className={`reveal ${styles.container}`} id="Projects">
+      <div className={styles.projectsBackground}>
+        <div className={styles.header}>
+          <span className={styles.kicker}>Some of my work</span>
+          <h2 className={styles.title}>&lt; Projects /&gt;</h2>
+          <p className={styles.subtitle}>
+            Selected projects I’ve built in frontend and UI design
+          </p>
+        </div>
 
-      <div className={styles.projects}>
-        {itemsToShow.map((project, id) => (
-          <ProjectCard key={id} project={project} />
-        ))}
+        <div className={styles.projects}>
+          {itemsToShow.map((project, id) => (
+            <ProjectCard key={id} project={project} />
+          ))}
+        </div>
+
+        <div className={styles.pagination}>
+          <button className={styles.arrow} onClick={prevPage}>
+            ❮
+          </button>
+
+          <span className={styles.pageIndicator}>
+            {page + 1} / {totalPages}
+          </span>
+
+          <button className={styles.arrow} onClick={nextPage}>
+            ❯
+          </button>
+        </div>
       </div>
-
-      <div className={styles.pagination}>
-        <button className={styles.arrow} onClick={prevPage}>❮</button>
-
-        <span className={styles.pageIndicator}>
-          {page + 1} / {totalPages}
-        </span>
-
-        <button className={styles.arrow} onClick={nextPage}>❯</button>
-      </div>
-    </div>
-  </section>
-);};
+    </section>
+  );
+};
 
 export default Projects;

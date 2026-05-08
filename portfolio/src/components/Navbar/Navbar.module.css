@@ -3,20 +3,16 @@
 
 .navbarBg {
   position: sticky;
-margin-top: 10px; 
-margin-bottom: 10px; 
-top: 0; 
-z-index: 50;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  top: 0;
+  z-index: 50;
 
-  background: linear-gradient(
-    90deg,
-    var(--color-dark),
-    var(--color-secondary)
-  );
+  background: linear-gradient(90deg, var(--color-dark), var(--color-secondary));
 
   backdrop-filter: blur(10px);
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {

@@ -10,14 +10,16 @@
   flex-direction: column;
   gap: 10px;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .container:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
 }
 
 .imageLink {
@@ -44,8 +46,8 @@
   text-align: center;
 }
 .skills {
-  list-style: none;   
-  padding: 0;         
+  list-style: none;
+  padding: 0;
   margin: 0;
 
   display: flex;
@@ -62,7 +64,7 @@
   width: 26px;
   height: 26px;
   object-fit: contain;
-  display: block;   
+  display: block;
 }
 
 .links {
@@ -82,13 +84,13 @@
 
   border-radius: 10px;
 
-  background: rgba(0,0,0,0.04);
+  background: rgba(0, 0, 0, 0.04);
 
   transition: all 0.2s ease;
 }
 
 .iconButton:hover {
-  background: rgba(0,0,0,0.08);
+  background: rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
 

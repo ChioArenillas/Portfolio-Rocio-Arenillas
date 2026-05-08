@@ -21,7 +21,7 @@ export const ProjectCard = ({
     const baseName = file.split(".")[0];
 
     const entry = Object.entries(images).find(([path]) =>
-      path.includes(baseName)
+      path.includes(baseName),
     );
 
     return entry?.[1];
@@ -31,7 +31,7 @@ export const ProjectCard = ({
     const baseName = file.split(".")[0];
 
     const entry = Object.entries(skillsIcons).find(([path]) =>
-      path.includes(baseName)
+      path.includes(baseName),
     );
 
     return entry?.[1];
@@ -39,18 +39,13 @@ export const ProjectCard = ({
 
   return (
     <div className={styles.container}>
-      
       <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.imageLink}
       >
-        <img
-          src={getImage(imageSrc)}
-          alt={title}
-          className={styles.image}
-        />
+        <img src={getImage(imageSrc)} alt={title} className={styles.image} />
       </a>
 
       <h3 className={styles.titleCard}>{title}</h3>
@@ -70,7 +65,6 @@ export const ProjectCard = ({
       </ul>
 
       <div className={styles.links}>
-        
         {github && (
           <a
             href={github}
@@ -79,11 +73,7 @@ export const ProjectCard = ({
             className={styles.iconButton}
             aria-label="View code on GitHub"
           >
-            <img
-              className={styles.icons}
-              src={githubIcon}
-              alt="GitHub"
-            />
+            <img className={styles.icons} src={githubIcon} alt="GitHub" />
           </a>
         )}
 
@@ -95,14 +85,9 @@ export const ProjectCard = ({
             className={styles.iconButton}
             aria-label="View design on Figma"
           >
-            <img
-              className={styles.icons}
-              src={figmaIcon}
-              alt="Figma"
-            />
+            <img className={styles.icons} src={figmaIcon} alt="Figma" />
           </a>
         )}
-
       </div>
     </div>
   );

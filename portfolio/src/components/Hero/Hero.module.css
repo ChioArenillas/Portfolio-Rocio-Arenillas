@@ -76,14 +76,14 @@
 
   color: white;
 
-  text-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 .subtitle {
   font-size: clamp(1rem, 2vw, 1.4rem);
   line-height: 1.6;
 
-  color: rgba(255,255,255,0.88);
+  color: rgba(255, 255, 255, 0.88);
 
   font-weight: 400;
 
@@ -94,7 +94,7 @@
   color: #7ee0d6;
   font-weight: 700;
 
-  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .textLeft::before,
@@ -116,7 +116,6 @@
 }
 
 @media (max-width: 980px) {
-
   .greyBackground {
     background: linear-gradient(
       to top,

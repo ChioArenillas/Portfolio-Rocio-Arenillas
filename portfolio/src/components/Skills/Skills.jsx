@@ -9,13 +9,13 @@ const images = import.meta.glob("/src/assets/skills/*", {
 
 export default function Skills() {
   const getImage = (file) => {
-    const baseName = file.split(".")[0]; 
+    const baseName = file.split(".")[0];
 
     const entry = Object.entries(images).find(([path]) =>
-      path.includes(baseName)
+      path.includes(baseName),
     );
 
-    return entry?.[1]; 
+    return entry?.[1];
   };
 
   const sliderRef = useRef(null);
@@ -67,47 +67,45 @@ export default function Skills() {
     };
   }, []);
 
-return (
-<section className={`reveal ${styles.container}`} id="Skills">    
-    <div className={styles.header}>
-      <span className={styles.kicker}>What I use</span>
-      <h1 className={styles.title}>&lt; Skills & Tools /&gt;</h1>
-      <p className={styles.subtitle}>
-        Technologies and tools I work with on a daily basis
-      </p>
-    </div>
-
-    <div className={styles.slider} ref={sliderRef}>
-      <div className={styles.track}>
-        
-        {skills.map((skill, index) => (
-          <div key={index} className={styles.item}>
-            <div>
-              <img
-                src={getImage(skill.imageSrc)}
-                alt={skill.title}
-                className={styles.logo}
-              />
-              <p className={styles.skillName}>{skill.title}</p>
-            </div>
-          </div>
-        ))}
-
-        {skills.map((skill, index) => (
-          <div key={`dup-${index}`} className={styles.item}>
-            <div>
-              <img
-                src={getImage(skill.imageSrc)}
-                alt={skill.title}
-                className={styles.logo}
-              />
-              <p className={styles.skillName}>{skill.title}</p>
-            </div>
-          </div>
-        ))}
-
+  return (
+    <section className={`reveal ${styles.container}`} id="Skills">
+      <div className={styles.header}>
+        <span className={styles.kicker}>What I use</span>
+        <h1 className={styles.title}>&lt; Skills & Tools /&gt;</h1>
+        <p className={styles.subtitle}>
+          Technologies and tools I work with on a daily basis
+        </p>
       </div>
-    </div>
-  </section>
-);
+
+      <div className={styles.slider} ref={sliderRef}>
+        <div className={styles.track}>
+          {skills.map((skill, index) => (
+            <div key={index} className={styles.item}>
+              <div>
+                <img
+                  src={getImage(skill.imageSrc)}
+                  alt={skill.title}
+                  className={styles.logo}
+                />
+                <p className={styles.skillName}>{skill.title}</p>
+              </div>
+            </div>
+          ))}
+
+          {skills.map((skill, index) => (
+            <div key={`dup-${index}`} className={styles.item}>
+              <div>
+                <img
+                  src={getImage(skill.imageSrc)}
+                  alt={skill.title}
+                  className={styles.logo}
+                />
+                <p className={styles.skillName}>{skill.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

@@ -6,12 +6,10 @@
   color: var(--color-text-dark);
 }
 
-/* ---------- HEADER ---------- */
 .kicker {
   color: var(--color-text-light);
 }
 .title {
-
   color: var(--color-text-light);
 }
 
@@ -19,7 +17,6 @@
   color: var(--color-text-light);
 }
 
-/* ---------- BACKGROUND ---------- */
 
 .projectsBackground {
   background: linear-gradient(
@@ -31,8 +28,6 @@
   padding: 40px 0;
 }
 
-/* ---------- GRID ---------- */
-
 .projects {
   margin: 0 auto;
   width: 90%;
@@ -43,8 +38,6 @@
 
   justify-items: center;
 }
-
-/* ---------- PAGINATION ---------- */
 
 .pagination {
   display: flex;
@@ -59,7 +52,7 @@
 
 .arrow {
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: white;
 
   width: 40px;
@@ -81,8 +74,6 @@
   font-weight: 600;
   letter-spacing: 1px;
 }
-
-/* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 830px) {
   .projects {
