@@ -1,18 +1,42 @@
-@import "../../vars.css";
-@import "../../index.css";
-
 .container {
-    margin-top: 30px;
+  margin-top: 80px;
+  padding: 0 10%;
 }
 
+/* ---------- HEADER ---------- */
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  margin: 10px 0;
+  color: var(--color-dark);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--color-text-dark);
+  opacity: 0.8;
+}
 
 /* ---------- SLIDER ---------- */
 
 .slider {
   overflow: hidden;
   width: 100%;
-  position: relative;
   cursor: grab;
+  padding: 20px 0;
 }
 
 .slider:active {
@@ -22,11 +46,13 @@
 .track {
   display: flex;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll 25s linear infinite;
+  will-change: transform;
 }
 
+/* scroll */
 :root {
-  --scroll-width: 2000px; 
+  --scroll-width: 2000px;
 }
 
 @keyframes scroll {
@@ -34,59 +60,43 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-1 * var(--scroll-width)));
+    transform: translateX(calc(-50%));
   }
 }
+
 
 .item {
   flex: 0 0 auto;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  align-items: center;
-  text-align: center;
+  margin: 14px;
 }
+
 
 .logo {
-  width: 52px;
-  height: 64px;
+  width: 38px;
+  height: 38px;
   object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.item:hover .logo {
-  transform: scale(1.12);
 }
 
 .skillName {
-  font-size: var(--font-size-small-text);
+  font-size: 12px;
   color: var(--color-text-dark);
-  height: 20px;
-  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+
+@media (max-width: 830px) {
+  .container {
+    padding: 0 5%;
   }
-  100% {
-    transform: translateX(calc(-1 * var(--scroll-width)));
+
+  .card {
+    width: 95px;
+    height: 95px;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
   }
 }
-
-
-/* ******** SMALL SCREEN *********** */
-
-@media screen and (max-width: 830px){
-    .logo{
-        width: 70%;
-    }
-    .skillItem{
-      font-size: var(--font-size-small-text);
-    }
-}
-
-
-
-

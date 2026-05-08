@@ -21,18 +21,6 @@ export default function Skills() {
   const sliderRef = useRef(null);
 
   useEffect(() => {
-    const track = document.querySelector(`.${styles.track}`);
-    const items = track.children;
-
-    let width = 0;
-    for (let i = 0; i < items.length / 2; i++) {
-      width += items[i].offsetWidth;
-    }
-
-    track.style.setProperty("--scroll-width", `${width}px`);
-  }, []);
-
-  useEffect(() => {
     const slider = sliderRef.current;
     let isDown = false;
     let startX;
@@ -79,18 +67,23 @@ export default function Skills() {
     };
   }, []);
 
-  return (
-    <section className={styles.container} id="Skills">
-      <div className={styles.titleBackground}>
-        <h1 className={styles.title}>&lt; SKILLS & TOOLS /&gt; </h1>
-      </div>
+return (
+  <section className={styles.container} id="Skills">
+    
+    <div className={styles.header}>
+      <span className={styles.kicker}>What I use</span>
+      <h1 className={styles.title}>&lt; Skills & Tools /&gt;</h1>
+      <p className={styles.subtitle}>
+        Technologies and tools I work with on a daily basis
+      </p>
+    </div>
 
-      <div className={styles.slider} ref={sliderRef}>
-        <div className={styles.track}>
-          
-          {/* Primera pasada */}
-          {skills.map((skill, index) => (
-            <div key={index} className={styles.item}>
+    <div className={styles.slider} ref={sliderRef}>
+      <div className={styles.track}>
+        
+        {skills.map((skill, index) => (
+          <div key={index} className={styles.item}>
+            <div>
               <img
                 src={getImage(skill.imageSrc)}
                 alt={skill.title}
@@ -98,11 +91,12 @@ export default function Skills() {
               />
               <p className={styles.skillName}>{skill.title}</p>
             </div>
-          ))}
+          </div>
+        ))}
 
-          {/* Segunda pasada para scroll infinito */}
-          {skills.map((skill, index) => (
-            <div key={`dup-${index}`} className={styles.item}>
+        {skills.map((skill, index) => (
+          <div key={`dup-${index}`} className={styles.item}>
+            <div>
               <img
                 src={getImage(skill.imageSrc)}
                 alt={skill.title}
@@ -110,10 +104,11 @@ export default function Skills() {
               />
               <p className={styles.skillName}>{skill.title}</p>
             </div>
-          ))}
+          </div>
+        ))}
 
-        </div>
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 }
