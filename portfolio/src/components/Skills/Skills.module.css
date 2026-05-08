@@ -1,3 +1,6 @@
+@import "../../vars.css";
+@import "../../index.css";
+
 .container {
   margin-top: 80px;
   padding: 0 10%;

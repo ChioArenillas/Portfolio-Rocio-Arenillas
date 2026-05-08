@@ -8,8 +8,14 @@ export default function About() {
   return (
     <section className={styles.container} id='About'>
       <div className={styles.content}>
+    <div className={styles.header}>
+      <span className={styles.kicker}>About</span>
+      <h1 className={styles.title}>&lt; Holaa! I’m Chio, 👋 /&gt;</h1>
+      <p className={styles.subtitle}>
+  A little bit about who I am, what I do, and what I enjoy building
+      </p>
+    </div>
         <div >
-          <h1 className={styles.title}>&lt; Holaa! I’m Chio, 👋/&gt;</h1>
           <p className={styles.description}>
             <span className={styles.colorText}>&lt;p&gt;</span> I’m a 
                 <span className={styles.colorText}> Web Designer </span>

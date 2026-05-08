@@ -16,21 +16,30 @@ html {
   scroll-behavior: smooth;
 
 }
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-.titleBackground {
-  background-color: var(--color-dark);
+.kicker {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
 }
 
 .title {
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-size: var(--font-size-title);
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  margin: 10px 0;
+  color: var(--color-dark);
 }
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
 .download{
   text-decoration: none;
   color: var(--color-text-light);
@@ -62,10 +71,6 @@ html {
 
 
 @media screen and (max-width: 830px) {
-  .title {
-    font-size: var(--font-size-small-title);
-    letter-spacing: 1px;
-  }
 
   .btn {
     font-size: var(--font-size-small-text);

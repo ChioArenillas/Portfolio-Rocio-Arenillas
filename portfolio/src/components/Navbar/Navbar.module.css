@@ -1,3 +1,6 @@
+@import "../../vars.css";
+@import "../../index.css";
+
 .navbarBg {
   position: sticky;
 margin-top: 10px; 

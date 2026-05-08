@@ -24,10 +24,14 @@ export default function Contact() {
 
     return (
         <section className={styles.container} id='Contact'>
-            <div className={styles.titleBackground}>
-                <h1 className={styles.title}>&lt; Contact /&gt;</h1>
-            </div>
-
+    <div className={styles.header}>
+      <span className={styles.kicker}>Get in touch</span>
+      <h2 className={styles.title}>&lt; Contact /&gt;</h2>
+            <p className={styles.subtitle}>
+              Say Hello!
+            </p>
+      
+    </div>
             <div className={styles.content}>
                 <div className={styles.text}>
                     <div className={styles.socials}>

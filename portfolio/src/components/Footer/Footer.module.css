@@ -1,18 +1,18 @@
 @import "../../vars.css";
 
 .footer{
-    background-color: var(--color-dark);
+    background-color: rgba(128, 128, 128, 0.429);
 }
 .content{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
-    color: var(--color-text-light);
+    color: var(--color-text-dark);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-size: var(--font-size-text);
 }
 .content a{
-    color: var(--color-text-light);
+    color: var(--color-text-dark);
 }
