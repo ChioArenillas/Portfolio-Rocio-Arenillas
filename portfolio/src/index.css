@@ -6,15 +6,40 @@
 }
 
 #About,
-#Skills,
-#Projects,
-#Contact {
+#Projects
+{
   scroll-margin-top: 70px;
 }
+#Skills{
+  scroll-margin-top: 150px;
+}
+
+
 
 html {
   scroll-behavior: smooth;
 
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+body {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fbfbfb 35%,
+    #f7f9f9 60%,
+    #ffffff 100%
+  );
+  color: var(--color-text-dark);
 }
 .header {
   text-align: center;

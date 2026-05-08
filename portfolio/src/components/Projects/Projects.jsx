@@ -41,8 +41,8 @@ export const Projects = () => {
     document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
   };
 return (
-  <section className={styles.container} id="projects">
-
+<section className={`reveal ${styles.container}`} id="Projects">    
+  <div className={styles.projectsBackground}>
     <div className={styles.header}>
       <span className={styles.kicker}>Some of my work</span>
       <h2 className={styles.title}>&lt; Projects /&gt;</h2>
@@ -51,7 +51,6 @@ return (
       </p>
     </div>
 
-    <div className={styles.projectsBackground}>
       <div className={styles.projects}>
         {itemsToShow.map((project, id) => (
           <ProjectCard key={id} project={project} />

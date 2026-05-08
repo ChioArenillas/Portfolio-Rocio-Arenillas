@@ -6,8 +6,8 @@ import about from "../../assets/about/aboutImg.jpg"
 
 export default function About() {
   return (
-    <section className={styles.container} id='About'>
-      <div className={styles.content}>
+<section className={`reveal ${styles.container}`} id="About">
+        <div className={styles.content}>
     <div className={styles.header}>
       <span className={styles.kicker}>About</span>
       <h1 className={styles.title}>&lt; Holaa! I’m Chio, 👋 /&gt;</h1>

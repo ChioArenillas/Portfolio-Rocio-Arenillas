@@ -68,8 +68,7 @@ export default function Skills() {
   }, []);
 
 return (
-  <section className={styles.container} id="Skills">
-    
+<section className={`reveal ${styles.container}`} id="Skills">    
     <div className={styles.header}>
       <span className={styles.kicker}>What I use</span>
       <h1 className={styles.title}>&lt; Skills & Tools /&gt;</h1>

@@ -7,9 +7,11 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import useReveal from "./components/useReveal";
 
 
-function App() {
+export default function App() {
+  useReveal()
 
   return (
     <div className={styles.App}> 
@@ -24,4 +26,3 @@ function App() {
   );
 }
 
-export default App;

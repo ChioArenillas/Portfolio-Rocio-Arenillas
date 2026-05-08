@@ -7,7 +7,17 @@
 }
 
 /* ---------- HEADER ---------- */
+.kicker {
+  color: var(--color-text-light);
+}
+.title {
 
+  color: var(--color-text-light);
+}
+
+.subtitle {
+  color: var(--color-text-light);
+}
 
 /* ---------- BACKGROUND ---------- */
 
