@@ -46,7 +46,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        <img className={styles.aboutImg}src={about} alt="About Img" />
     </section>
   )
 }
