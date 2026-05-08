@@ -40,6 +40,10 @@
         "imageSrc": "nextjs.png"
     },
     {
+        "title": "Vite",
+        "imageSrc": "vite.png"
+    },
+    {
         "title": "Vue",
         "imageSrc": "vue.png"
     },
