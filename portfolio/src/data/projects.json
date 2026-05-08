@@ -1,4 +1,12 @@
 [
+    {
+    "title": "FOKUS Website",
+    "imageSrc": "Fokus.png",
+    "description": "Built a SaaS-style web application, featuring a user portal with Firebase authentication, dynamic boards and task management, and full CRUD functionality.",    
+    "icons": ["HTML.png","css.png", "Typescript.png", "react.png"],
+    "url": "https://fokus.vercel.app/",
+    "github": "https://github.com/ChioArenillas/Fokus"
+  },
   {
     "title": "VANLIFE Website",
     "imageSrc": "VanLife.png",
