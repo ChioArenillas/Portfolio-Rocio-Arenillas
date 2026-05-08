@@ -40,31 +40,35 @@ export const Projects = () => {
     setPage((p) => (p - 1 + totalPages) % totalPages);
     document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
   };
-  return (
-    <section className={styles.container} id="projects">
-      <div className={styles.titleBackground}>
-        <h2 className={styles.title}>&lt; Projects /&gt; </h2>
+return (
+  <section className={styles.container} id="projects">
+
+    <div className={styles.header}>
+      <span className={styles.kicker}>Some of my work</span>
+      <h2 className={styles.title}>&lt; Projects /&gt;</h2>
+      <p className={styles.subtitle}>
+        Selected projects I’ve built in frontend and UI design
+      </p>
+    </div>
+
+    <div className={styles.projectsBackground}>
+      <div className={styles.projects}>
+        {itemsToShow.map((project, id) => (
+          <ProjectCard key={id} project={project} />
+        ))}
       </div>
 
-      <div className={styles.projectsBackground}>
-        <div className={styles.projects}>
-          {itemsToShow.map((project, id) => (
-            <ProjectCard key={id} project={project} />
-          ))}
-        </div>
+      <div className={styles.pagination}>
+        <button className={styles.arrow} onClick={prevPage}>❮</button>
 
-        <div className={styles.pagination}>
-          <button className={styles.arrow} onClick={prevPage}>❮</button>
+        <span className={styles.pageIndicator}>
+          {page + 1} / {totalPages}
+        </span>
 
-          <span className={styles.pageIndicator}>
-            {page + 1} / {totalPages}
-          </span>
-
-          <button className={styles.arrow} onClick={nextPage}>❯</button>
-        </div>
+        <button className={styles.arrow} onClick={nextPage}>❯</button>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);};
 
 export default Projects;

@@ -1,68 +1,102 @@
-@import "../../vars.css";
-
 .container {
-    margin-top: 20px;
-    color: var(--color-text);
+  margin-top: 100px;
+  color: var(--color-text-dark);
 }
+
+/* ---------- HEADER ---------- */
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
 .title {
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    font-size: var(--font-size-title);
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background-color: var(--color-dark);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  margin: 10px 0;
+  color: var(--color-dark);
 }
-.projectsBackground{
-    background-color: var(--color-dark);
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.7;
 }
+
+/* ---------- BACKGROUND ---------- */
+
+.projectsBackground {
+  background: linear-gradient(
+    180deg,
+    var(--color-dark),
+    var(--color-secondary)
+  );
+
+  padding: 40px 0;
+}
+
+/* ---------- GRID ---------- */
+
 .projects {
-  margin-top: 30px;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  justify-content: center;
-  justify-items: center;
-  gap: 15px;
+  margin: 0 auto;
   width: 90%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+
+  justify-items: center;
 }
+
+/* ---------- PAGINATION ---------- */
 
 .pagination {
-  color: var(--color-text-light);
-  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+
+  padding-top: 30px;
+  gap: 20px;
+
+  color: white;
 }
 
 .arrow {
-  background: var(--color-dark);
-  color: var(--color-text-light);
-  border: none;
-  font-size: 24px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
   cursor: pointer;
-  margin: 10px 15px;
-  transition: transform 0.2s ease;
+
+  transition: all 0.25s ease;
 }
 
 .arrow:hover {
-  transform: scale(1.1);
-}
-.pageIndicator{
-  font-weight: bold;
-  margin-top: 15px;
+  background: white;
+  color: var(--color-dark);
+  transform: scale(1.05);
 }
 
-/* ******** SMALL SCREEN *********** */
+.pageIndicator {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
-@media screen and (max-width: 830px){
-    .projects{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .title{
-        font-size: var(--font-size-small-title);
-        letter-spacing: 1px;
-    }
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 830px) {
+  .projects {
+    grid-template-columns: 1fr;
+    width: 85%;
+  }
 }
