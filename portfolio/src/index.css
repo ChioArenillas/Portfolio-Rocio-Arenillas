@@ -11,8 +11,9 @@
 #Projects {
   scroll-margin-top: 70px;
 }
-#Skills {
-  scroll-margin-top: 150px;
+#Skills,
+#Contact {
+  scroll-margin-top: 100px;
 }
 
 html {

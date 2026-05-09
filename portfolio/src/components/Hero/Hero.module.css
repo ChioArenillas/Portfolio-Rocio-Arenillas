@@ -144,10 +144,6 @@
     text-align: center;
   }
 
-  .textLeft::before,
-  .textRight::before {
-    align-self: center;
-  }
 
   .subtitle {
     max-width: 100%;
