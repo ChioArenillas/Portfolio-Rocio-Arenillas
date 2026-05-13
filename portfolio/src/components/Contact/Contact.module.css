@@ -63,7 +63,6 @@
 @media screen and (max-width: 830px) {
   .content {
     flex-direction: column;
-    font-size: var(--font-size-small-text);
     align-items: center;
   }
   .text {
@@ -73,11 +72,5 @@
   }
   .box {
     width: 100%;
-  }
-  .inputTitle {
-    font-size: var(--font-size-small-text);
-  }
-  .input {
-    font-size: var(--font-size-small-text);
   }
 }
