@@ -17,3 +17,8 @@
 .content a{
     color: var(--color-text-dark);
 }
+@media screen and (max-width: 830px) {
+  .content {
+  font-size: var(--font-size-small-text);
+  }
+}
