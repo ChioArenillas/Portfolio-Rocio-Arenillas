@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./Skills.module.css";
 import skills from "/src/data/skills.json";
+import { useLanguage } from "../../context/LanguageContext";
+
 
 const images = import.meta.glob("/src/assets/skills/*", {
   eager: true,
@@ -8,6 +10,7 @@ const images = import.meta.glob("/src/assets/skills/*", {
 });
 
 export default function Skills() {
+  const {t} = useLanguage()
   const getImage = (file) => {
     const baseName = file.split(".")[0];
 
@@ -70,10 +73,10 @@ export default function Skills() {
   return (
     <section className={`reveal ${styles.container}`} id="Skills">
       <div className={styles.header}>
-        <span className={styles.kicker}>What I use</span>
-        <h1 className={styles.title}>&lt; Skills & Tools /&gt;</h1>
+        <span className={styles.kicker}>{t.skills.kicker}</span>
+        <h1 className={styles.title}>{t.skills.title}</h1>
         <p className={styles.subtitle}>
-          Technologies and tools I work with on a daily basis
+          {t.skills.subtitle}
         </p>
       </div>
 

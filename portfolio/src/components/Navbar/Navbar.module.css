@@ -7,18 +7,14 @@
   margin-bottom: 10px;
   top: 0;
   z-index: 50;
-
   background: linear-gradient(90deg, var(--color-dark), var(--color-secondary));
-
   backdrop-filter: blur(10px);
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
   margin: 0 10%;
   padding: 14px 0;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,11 +23,9 @@
 .title {
   color: white;
   text-decoration: none;
-
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
-
   transition: opacity 0.2s ease;
 }
 
@@ -42,11 +36,13 @@
 .menu {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .menuBtn {
   display: none;
   cursor: pointer;
+  height: 32px;
 }
 
 .menuItems {
@@ -58,10 +54,8 @@
 .menuItems a {
   color: white;
   text-decoration: none;
-
   font-size: 14px;
   font-weight: 500;
-
   position: relative;
   transition: 0.3s ease;
 }
@@ -71,10 +65,8 @@
   position: absolute;
   left: 0;
   bottom: -5px;
-
   width: 0%;
   height: 2px;
-
   background: white;
   transition: width 0.3s ease;
 }
@@ -87,6 +79,19 @@
   opacity: 0.85;
 }
 
+.langBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.langBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 @media (max-width: 830px) {
   .menuBtn {
     display: block;
@@ -96,12 +101,9 @@
     position: absolute;
     top: 60px;
     right: 10%;
-
     flex-direction: column;
     gap: 15px;
-
     padding: 20px;
-
     background: linear-gradient(
       180deg,
       var(--color-dark),
@@ -109,7 +111,6 @@
     );
 
     border-radius: 12px;
-
     display: none;
   }
 

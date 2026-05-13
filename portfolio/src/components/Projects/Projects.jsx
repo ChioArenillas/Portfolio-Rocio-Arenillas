@@ -4,8 +4,10 @@ import styles from "./Projects.module.css";
 
 import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
+import { useLanguage } from "../../context/LanguageContext";
 
 export const Projects = () => {
+  const {t} = useLanguage()
   const [cardsPerPage, setCardsPerPage] = useState(9);
 
   useEffect(() => {
@@ -44,10 +46,10 @@ export const Projects = () => {
     <section className={`reveal ${styles.container}`} id="Projects">
       <div className={styles.projectsBackground}>
         <div className={styles.header}>
-          <span className={styles.kicker}>Some of my work</span>
-          <h2 className={styles.title}>&lt; Projects /&gt;</h2>
+          <span className={styles.kicker}>{t.projects.kicker}</span>
+          <h2 className={styles.title}>{t.projects.title}</h2>
           <p className={styles.subtitle}>
-            Selected projects I’ve built in frontend and UI design
+            {t.projects.subtitle}
           </p>
         </div>
 

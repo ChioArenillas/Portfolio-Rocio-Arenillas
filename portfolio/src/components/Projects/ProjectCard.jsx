@@ -3,6 +3,7 @@ import githubIcon from "../../assets/contact/githubIcon.png";
 import figmaIcon from "../../assets/contact/figmaIcon.png";
 
 import styles from "./ProjectCard.module.css";
+import { useLanguage } from "../../context/LanguageContext";
 
 const images = import.meta.glob("/src/assets/projects/*", {
   eager: true,
@@ -17,25 +18,32 @@ const skillsIcons = import.meta.glob("/src/assets/skills/*", {
 export const ProjectCard = ({
   project: { title, imageSrc, description, icons, url, github, figma },
 }) => {
+  const {language} = useLanguage()
   const getImage = (file) => {
     const baseName = file.split(".")[0];
-
     const entry = Object.entries(images).find(([path]) =>
       path.includes(baseName),
     );
-
     return entry?.[1];
   };
 
   const getSkillsIcon = (file) => {
     const baseName = file.split(".")[0];
-
     const entry = Object.entries(skillsIcons).find(([path]) =>
       path.includes(baseName),
     );
-
     return entry?.[1];
   };
+
+  const getDescription = () => {
+    if(typeof description === "string"){
+      return description
+    }
+    if(description && typeof description === "object"){
+      return description[language] || description.en
+    }
+    return ""
+  }
 
   return (
     <div className={styles.container}>
@@ -50,7 +58,7 @@ export const ProjectCard = ({
 
       <h3 className={styles.titleCard}>{title}</h3>
 
-      <p className={styles.description}>{description}</p>
+      <p className={styles.description}>{getDescription()}</p>
 
       <ul className={styles.skills}>
         {icons.map((iconFile, id) => (

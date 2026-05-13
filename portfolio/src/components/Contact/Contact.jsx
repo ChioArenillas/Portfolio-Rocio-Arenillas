@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import github from "../../assets/contact/githubIcon.png";
 import linkedin from "../../assets/contact/linkedinIcon.png";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function Contact() {
+  const {t} = useLanguage()
   const [sent, setSent] = useState(false);
 
   const handleSubmit = (e) => {
@@ -19,15 +21,15 @@ export default function Contact() {
         setSent(true);
         form.reset();
       })
-      .catch(() => alert("Something went wrong, try again later."));
+      .catch(() => alert(t.contact.errorMessage));
   };
 
   return (
     <section className={`reveal ${styles.container}`} id="Contact">
       <div className={styles.header}>
-        <span className={styles.kicker}>Get in touch</span>
-        <h2 className={styles.title}>&lt; Contact /&gt;</h2>
-        <p className={styles.subtitle}>Say Hello!</p>
+        <span className={styles.kicker}>{t.contact.kicker}</span>
+        <h2 className={styles.title}>{t.contact.title}</h2>
+        <p className={styles.subtitle}>{t.contact.subtitle}</p>
       </div>
       <div className={styles.content}>
         <div className={styles.text}>
@@ -48,37 +50,32 @@ export default function Contact() {
             </a>
           </div>
 
-          <p>I’d love to hear from you!</p>
-          <p>
-            Whether you have a brilliant idea, a random thought, or just want to
-            say hi.
-          </p>
-          <p>Don’t be shy!</p>
+          <p>{t.contact.intro}</p>
         </div>
 
         <form className={styles.box} onSubmit={handleSubmit}>
-          <p className={styles.inputTitle}>Name</p>
+          <p className={styles.inputTitle}>{t.contact.nameLabel}</p>
           <input
             className={styles.input}
-            placeholder="Your Name"
+            placeholder={t.contact.namePlaceholder}
             type="text"
             name="name"
             required
           />
 
-          <p className={styles.inputTitle}>Email Address</p>
+          <p className={styles.inputTitle}>{t.contact.emailLabel}</p>
           <input
             className={styles.input}
-            placeholder="Your Email"
+            placeholder={t.contact.emailPlaceholder}
             type="email"
             name="email"
             required
           />
 
-          <p className={styles.inputTitle}>Your Message</p>
+          <p className={styles.inputTitle}>{t.contact.messageLabel}</p>
           <textarea
             className={styles.input}
-            placeholder="Message"
+            placeholder={t.contact.messagePlaceholder}
             rows="5"
             name="message"
             required
@@ -87,12 +84,12 @@ export default function Contact() {
           <input type="hidden" name="_captcha" value="false" />
 
           <button type="submit" className={styles.btn}>
-            Say Hello!
+            {t.contact.submitBtn}
           </button>
 
           {sent && (
             <p className={styles.successMessage}>
-              ✔️ Your message has been sent! I’ll get back to you soon 💌
+              {t.contact.successMessage}
             </p>
           )}
         </form>
