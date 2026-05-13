@@ -137,7 +137,7 @@ description: (styles) => (
     projects: {
       kicker: "Mi Trabajo",
       title: "< Proyectos />",
-      subtitle: "Algunos de los proyectos en los que he estado trabajando",
+      subtitle: "Algunos de los proyectos en los que he trabajado",
     },
     contact: {
       kicker: "Ponte en contacto",
