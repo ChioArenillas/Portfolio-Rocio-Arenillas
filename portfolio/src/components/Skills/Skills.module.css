@@ -45,6 +45,7 @@
 .item {
   flex: 0 0 auto;
   margin: 14px;
+  text-align: center;
 }
 
 .logo {

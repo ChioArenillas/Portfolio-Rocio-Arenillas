@@ -84,14 +84,12 @@ export default function Skills() {
         <div className={styles.track}>
           {skills.map((skill, index) => (
             <div key={index} className={styles.item}>
-              <div>
                 <img
                   src={getImage(skill.imageSrc)}
                   alt={skill.title}
                   className={styles.logo}
                 />
                 <p className={styles.skillName}>{skill.title}</p>
-              </div>
             </div>
           ))}
 
