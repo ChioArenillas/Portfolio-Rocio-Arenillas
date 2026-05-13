@@ -124,7 +124,7 @@ description: (styles) => (
 </>
 ),
       downloadCV: "Descargar CV",
-      coverLetter: "Carta de Presentación",
+      coverLetter: "Carta",
       cvLink: "/cv/CV-Rocio-Arenillas-ESP.pdf",
       coverLetterLink: "/cv/Carta-Presentaci%C3%B3n-Rocio-Arenillas-ESP.pdf"
 

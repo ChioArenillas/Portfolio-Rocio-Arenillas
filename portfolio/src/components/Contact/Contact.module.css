@@ -13,7 +13,7 @@
   align-items: flex-start;
   margin-left: 10%;
   margin-right: 10%;
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-small-text);
 }
 .text {
   flex: 1;
@@ -39,13 +39,13 @@
   gap: 10px;
 }
 .inputTitle {
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-small-text);
   font-weight: bold;
 }
 .input {
   width: 100%;
   padding: 8px 20px;
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-small-text);
   border: 1px solid var(--color-text-dark);
   border-radius: 8px;
   box-sizing: border-box;
@@ -64,9 +64,12 @@
   .content {
     flex-direction: column;
     font-size: var(--font-size-small-text);
+    align-items: center;
   }
   .text {
     max-width: 830px;
+    align-items: center;
+    text-align: center;
   }
   .box {
     width: 100%;

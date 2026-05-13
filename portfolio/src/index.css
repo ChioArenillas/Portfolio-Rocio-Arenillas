@@ -96,4 +96,10 @@ body {
   .btn {
     font-size: var(--font-size-small-text);
   }
+  .title{
+    font-size: var(--font-size-small-title);
+  }
+  .subtitle{
+    font-size: var(--font-size-small-text);
+  }
 }
