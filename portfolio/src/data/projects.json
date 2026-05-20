@@ -1,182 +1,277 @@
 [
   {
-    "title": "FOKUS Website",
+    "title": {
+      "en": "Psychologist Web (Freelance)",
+      "es": "Web Psicóloga (Freelance)"
+    },
+    "imageSrc": "Psicologa.png",
+    "description": {
+      "en": "Real responsive React website with contact form integration (email), routing, CTA sections, WhatsApp/Instagram links, and legal pages.",
+      "es": "React Web real responsive con formulario de contacto integrado (email), routing, secciones CTA, enlaces a WhatsApp/Instagram y páginas legales."
+    },
+    "icons": ["HTML.png", "css.png", "Typescript.png", "react.png"],
+    "url": "https://celia-conde.vercel.app/",
+    "github": "https://github.com/ChioArenillas/CeliaConde"
+  },
+  {
+    "title": {
+      "en": "SaaS Dashboard",
+      "es": "Dashboard SaaS"
+    },
     "imageSrc": "Fokus.png",
     "description": {
       "en": "Built a SaaS-style web application, featuring a user portal with Firebase authentication, dynamic boards and task management, and full CRUD functionality.",
       "es": "Aplicación web tipo SaaS con portal de usuario, autenticación con Firebase, tableros dinámicos, gestión de tareas y funcionalidad CRUD completa."
     },
-    "icons": ["HTML.png","css.png", "Typescript.png", "react.png"],
+    "icons": ["HTML.png", "css.png", "Typescript.png", "react.png"],
     "url": "https://fokus.vercel.app/",
     "github": "https://github.com/ChioArenillas/Fokus"
   },
   {
-    "title": "VANLIFE Website",
+    "title": {
+      "en": "User Platform",
+      "es": "Plataforma de usuario"
+    },
     "imageSrc": "VanLife.png",
     "description": {
       "en": "Built a web application with Firebase authentication, including a user dashboard and full CRUD functionality with persistent data management.",
       "es": "Aplicación web con autenticación Firebase, panel de usuario y funcionalidad CRUD completa con gestión de datos persistente."
     },
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png", "react.png"],
     "url": "https://van-life-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/VanLife"
   },
   {
-    "title": "PrintForge Website",
+    "title": {
+      "en": "3D products Marketplace",
+      "es": "Marketplace productos 3D"
+    },
     "imageSrc": "PrintForge.png",
     "description": {
       "en": "Developed a 3D printing platform with dynamic content rendering, category-based filtering, and a responsive UI built with a component-based architecture.",
       "es": "Plataforma de impresión 3D con renderizado dinámico de contenido, filtrado por categorías e interfaz responsiva basada en componentes."
     },
-    "icons": ["HTML.png","css.png", "Typescript.png", "react.png", "nextjs.png"],
+    "icons": [
+      "HTML.png",
+      "css.png",
+      "Typescript.png",
+      "react.png",
+      "nextjs.png"
+    ],
     "url": "https://print-forge-lake.vercel.app/",
     "github": "https://github.com/ChioArenillas/PrintForge"
   },
   {
-    "title": "GoRural Website",
+    "title": {
+      "en": "Activity booking page",
+      "es": "Página reserva actividades"
+    },
     "imageSrc": "GoRural.png",
     "description": {
       "en": "Built the GoRural web experience using React, translating a Figma design into a fully functional and responsive website.",
       "es": "Experiencia web GoRural construida con React, traduciendo un diseño de Figma a una web totalmente funcional y responsiva."
     },
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "nextjs.png"],
+    "icons": [
+      "HTML.png",
+      "css.png",
+      "javascript.png",
+      "react.png",
+      "nextjs.png"
+    ],
     "url": "https://go-rural.vercel.app/",
     "github": "https://github.com/ChioArenillas/GoRural"
   },
   {
-    "title": "Donuts App",
+    "title": {
+      "en": "Product Manager",
+      "es": "Gestor Productos"
+    },
     "imageSrc": "Donuts.png",
     "description": {
       "en": "Developed a dynamic product management application with React, enabling creation, deletion, and persistence of items in a remote database.",
       "es": "Aplicación dinámica de gestión de productos con React, permitiendo crear, eliminar y persistir elementos en una base de datos remota."
     },
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "redux.png"],
+    "icons": [
+      "HTML.png",
+      "css.png",
+      "javascript.png",
+      "react.png",
+      "redux.png"
+    ],
     "url": "https://donuts-app-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/DonutsApp"
   },
   {
-    "title": "Hangman Game",
+    "title": {
+      "en": "Interactive Game",
+      "es": "Juego Interactivo"
+    },
     "imageSrc": "HangmanGame.png",
     "description": {
       "en": "Built an interactive Hangman game using TypeScript, implementing structured game logic, input validation, and a reusable component architecture.",
       "es": "Juego interactivo del ahorcado con TypeScript, implementando lógica estructurada, validación de entradas y arquitectura de componentes reutilizables."
     },
-    "icons": ["HTML.png","css.png", "Typescript.png", "react.png"],
+    "icons": ["HTML.png", "css.png", "Typescript.png", "react.png"],
     "url": "https://hangman-game-murex-eight.vercel.app/",
     "github": "https://github.com/ChioArenillas/HangmanGame"
   },
   {
-    "title": "Chef Claude",
+    "title": {
+      "en": "Recipe Generator AI",
+      "es": "Generador IA Recetas"
+    },
     "imageSrc": "ChefClaude.png",
     "description": {
       "en": "Developed a React application that generates recipes based on user-input ingredients, leveraging AI-driven logic for content generation.",
       "es": "Aplicación React que genera recetas basadas en ingredientes ingresados por el usuario, utilizando lógica impulsada por IA."
     },
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png", "react.png"],
     "url": "https://chef-claude-bice.vercel.app/",
     "github": "https://github.com/ChioArenillas/ChefClaude.git"
   },
   {
-    "title": "Pokemon App",
+    "title": {
+      "en": "Pokémon CRUD App",
+      "es": "CRUD App Pokémon"
+    },
     "imageSrc": "pokemonapp.png",
     "description": {
       "en": "Built a multi-page Pokémon application using Next.js, integrating external API data with structured rendering and navigation between views.",
       "es": "Aplicación multi-página de Pokémon con Next.js, integrando datos de API externa con renderizado estructurado y navegación entre vistas."
     },
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "nextjs.png"],
+    "icons": [
+      "HTML.png",
+      "css.png",
+      "javascript.png",
+      "react.png",
+      "nextjs.png"
+    ],
     "url": "https://app-pokemon-five.vercel.app/",
     "github": "https://github.com/ChioArenillas/AppPokemon.git"
   },
   {
-    "title": "Meme Generator",
+    "title": {
+      "en": "Meme Generator",
+      "es": "Generador Memes"
+    },
     "imageSrc": "MemeGenerator.png",
     "description": {
       "en": "Developed a React-based meme generator that overlays user text onto dynamically fetched images, including unit testing with Vitest.",
       "es": "Generador de memes con React que superpone texto del usuario en imágenes obtenidas dinámicamente, incluyendo tests unitarios con Vitest."
     },
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png", "vitest.png"],
+    "icons": [
+      "HTML.png",
+      "css.png",
+      "javascript.png",
+      "react.png",
+      "vitest.png"
+    ],
     "url": "https://meme-generator-dusky-zeta.vercel.app/",
     "github": "https://github.com/ChioArenillas/MemeGenerator"
   },
   {
-    "title": "Memory Game",
+    "title": {
+      "en": "Memory Game",
+      "es": "Juego de Memoria"
+    },
     "imageSrc": "MemoryGame.png",
     "description": {
       "en": "Built an accessible React memory game with configurable settings and API-driven emoji data, focusing on usability and accessibility.",
       "es": "Juego de memoria accesible con React, configuración personalizable y datos de emojis vía API, enfocado en usabilidad y accesibilidad."
     },
-    "icons": ["HTML.png","css.png", "javascript.png", "react.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png", "react.png"],
     "url": "https://memory-game-two-eta-84.vercel.app/",
     "github": "https://github.com/ChioArenillas/MemoryGame"
   },
   {
-    "title": "Dashboard",
+    "title": {
+      "en": "Analytics Dashboard",
+      "es": "Dashboard Analítico"
+    },
     "imageSrc": "Dashboard.png",
     "description": {
       "en": "Developed a real-time dashboard displaying dynamic data from multiple APIs including weather, Bitcoin, location, and date information.",
       "es": "Dashboard en tiempo real que muestra datos dinámicos de múltiples APIs: clima, Bitcoin, ubicación e información de fecha."
     },
-    "icons": ["HTML.png","css.png", "javascript.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png"],
     "url": "https://dashboard-psi-sandy-55.vercel.app/",
     "github": "https://github.com/ChioArenillas/Dashboard"
   },
   {
-    "title": "Budget App",
+    "title": {
+      "en": "Budget Tracker",
+      "es": "Control Gastos"
+    },
     "imageSrc": "BudgetApp.png",
     "description": {
       "en": "Built a budgeting application for managing income and expenses, featuring real-time balance calculation and data overview.",
       "es": "Aplicación de presupuesto para gestionar ingresos y gastos, con cálculo de balance en tiempo real y vista general de datos."
     },
-    "icons": ["HTML.png","css.png", "javascript.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png"],
     "url": "https://budget-app-neon-two.vercel.app/",
     "github": "https://github.com/ChioArenillas/BudgetApp"
   },
   {
-    "title": "Tenzies",
+    "title": {
+      "en": "Dice Game",
+      "es": "Juego de Dados"
+    },
     "imageSrc": "Tenzies.png",
     "description": {
       "en": "Developed an interactive dice game where players hold values strategically until all numbers match, implementing core game logic in JavaScript.",
       "es": "Juego de dados interactivo donde los jugadores guardan valores estratégicamente hasta que todos coincidan, con lógica principal en JavaScript."
     },
-    "icons": ["HTML.png","css.png", "javascript.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png"],
     "url": "https://tenzies-delta-one.vercel.app/",
     "github": "https://github.com/ChioArenillas/Tenzies"
   },
   {
-    "title": "Cards War",
+    "title": {
+      "en": "Card Game",
+      "es": "Juego de Cartas"
+    },
     "imageSrc": "CardsWar.png",
     "description": {
       "en": "Built a card game using an external API to generate a deck, where players compete by comparing drawn card values.",
       "es": "Juego de cartas usando una API externa para generar un mazo, donde los jugadores compiten comparando los valores de las cartas robadas."
     },
-    "icons": ["HTML.png","css.png", "javascript.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png"],
     "url": "https://cards-war-liart.vercel.app/",
     "github": "https://github.com/ChioArenillas/CardsWar"
   },
   {
-    "title": "Blackjack Game",
+    "title": {
+      "en": "Blackjack Game",
+      "es": "Juego de Blackjack"
+    },
     "imageSrc": "Blackjack.png",
     "description": {
       "en": "Developed an interactive Blackjack game with button-driven gameplay and structured game logic using JavaScript.",
       "es": "Juego interactivo de Blackjack con control por botones y lógica estructurada del juego usando JavaScript."
     },
-    "icons": ["HTML.png","css.png", "javascript.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png"],
     "url": "https://black-jack-app-one.vercel.app/",
     "github": "https://github.com/ChioArenillas/BlackJackApp.git"
   },
   {
-    "title": "Films Selector",
+    "title": {
+      "en": "Movie Finder",
+      "es": "Buscador Pelis"
+    },
     "imageSrc": "dataFilms.png",
     "description": {
       "en": "Built a movie search application with filtering, grid/list views, and dynamic data fetching from an external API.",
       "es": "Aplicación de búsqueda de películas con filtrado, vistas de cuadrícula/lista y obtención dinámica de datos desde API externa."
     },
-    "icons": ["HTML.png","css.png", "javascript.png"],
+    "icons": ["HTML.png", "css.png", "javascript.png"],
     "url": "https://films-data-base.vercel.app/",
     "github": "https://github.com/ChioArenillas/Films-Data-Base.git"
   },
   {
-    "title": "Activity Booking App",
+    "title": {
+      "en": "UI Prototype",
+      "es": "Prototipo UI"
+    },
     "imageSrc": "App.png",
     "description": {
       "en": "Designed a mobile app prototype in Figma focused on simplifying activity discovery and booking flows.",
@@ -187,24 +282,30 @@
     "figma": "https://www.figma.com/design/KdJbJaFns34lfF0gxPEqpg/Pantallas-App?node-id=0-1&t=kcqRBVuQsUqc2Ngd-1"
   },
   {
-    "title": "Movie Website",
+    "title": {
+      "en": "Static Website",
+      "es": "Web Estática"
+    },
     "imageSrc": "web.png",
     "description": {
       "en": "Built a movie information website using semantic HTML and CSS with a focus on clean layout and usability.",
       "es": "Web de información de películas usando HTML semántico y CSS, con enfoque en diseño limpio y usabilidad."
     },
-    "icons": ["HTML.png","css.png"],
+    "icons": ["HTML.png", "css.png"],
     "url": "https://chioarenillas.github.io/MovieWebsite/",
     "github": "https://github.com/ChioArenillas/MovieWebsite"
   },
   {
-    "title": "Movie Data Page",
+    "title": {
+      "en": "Detail Page",
+      "es": "Página Detalle"
+    },
     "imageSrc": "MovieData.png",
     "description": {
       "en": "Developed a movie details page using HTML and CSS, focusing on structured layout and visual clarity.",
       "es": "Página de detalles de película con HTML y CSS, enfocada en diseño estructurado y claridad visual."
     },
-    "icons": ["HTML.png","css.png"],
+    "icons": ["HTML.png", "css.png"],
     "url": "https://chioarenillas.github.io/MovieDetail/",
     "github": "https://github.com/ChioArenillas/MovieDetail"
   }

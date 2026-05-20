@@ -35,6 +35,16 @@ export const ProjectCard = ({
     return entry?.[1];
   };
 
+    const getTitle = () => {
+    if(typeof title === "string"){
+      return title
+    }
+    if(title && typeof title === "object"){
+      return title[language] || title.en
+    }
+    return ""
+  }
+
   const getDescription = () => {
     if(typeof description === "string"){
       return description
@@ -56,7 +66,7 @@ export const ProjectCard = ({
         <img src={getImage(imageSrc)} alt={title} className={styles.image} />
       </a>
 
-      <h3 className={styles.titleCard}>{title}</h3>
+      <h3 className={styles.titleCard}>{getTitle()}</h3>
 
       <p className={styles.description}>{getDescription()}</p>
 
