@@ -26,7 +26,27 @@
     "icons": ["HTML.png", "css.png", "Typescript.png", "react.png"],
     "url": "https://fokus.vercel.app/",
     "github": "https://github.com/ChioArenillas/Fokus"
+  },  
+{
+  "title": {
+    "en": "AI CV Analyzer SaaS",
+    "es": "Analizador de CV con IA"
   },
+  "imageSrc": "HireFlow.png",
+  "description": {
+    "en": "AI-powered job matching platform that analyzes CVs against job descriptions using AI. Includes CV parsing, ATS-style scoring, skill detection, ranking, and real-time feedback.",
+    "es": "Plataforma de empleo que compara CVs con las ofertas usando IA. Incluye adjuntar CV, scoring tipo ATS, detección de skills, ranking y feedback en tiempo real."
+  },
+    "icons": [
+      "HTML.png",
+      "css.png",
+      "Typescript.png",
+      "react.png",
+      "nextjs.png"
+    ],
+    "url": "https://hire-flow-plum.vercel.app/",
+    "github": "https://github.com/ChioArenillas/HireFlow"
+},
   {
     "title": {
       "en": "User Platform",
@@ -37,7 +57,12 @@
       "en": "Built a web application with Firebase authentication, including a user dashboard and full CRUD functionality with persistent data management.",
       "es": "Aplicación web con autenticación Firebase, panel de usuario y funcionalidad CRUD completa con gestión de datos persistente."
     },
-    "icons": ["HTML.png", "css.png", "javascript.png", "react.png"],
+    "icons": [      
+      "HTML.png",
+      "css.png",
+      "javascript.png",
+      "react.png"
+],
     "url": "https://van-life-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/VanLife"
   },
