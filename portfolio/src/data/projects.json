@@ -34,15 +34,16 @@
   },
   "imageSrc": "HireFlow.png",
   "description": {
-    "en": "AI-powered job matching platform that analyzes CVs against job descriptions using AI. Includes CV parsing, ATS-style scoring, skill detection, ranking, and real-time feedback.",
-    "es": "Plataforma de empleo que compara CVs con las ofertas usando IA. Incluye adjuntar CV, scoring tipo ATS, detección de skills, ranking y feedback en tiempo real."
+    "en": "AI-powered job matching platform that analyzes CVs against job descriptions. Includes CV parsing, ATS-style scoring and unit testing with Vitest..",
+    "es": "Plataforma de empleo que compara CVs con las ofertas usando IA. Incluye adjuntar CV, scoring tipo ATS y tests unitarios con Vitest."
   },
     "icons": [
       "HTML.png",
       "css.png",
       "Typescript.png",
       "react.png",
-      "nextjs.png"
+      "nextjs.png",
+      "vitest.png"
     ],
     "url": "https://hire-flow-plum.vercel.app/",
     "github": "https://github.com/ChioArenillas/HireFlow"
