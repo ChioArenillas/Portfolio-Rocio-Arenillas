@@ -9,7 +9,7 @@
       "en": "Real responsive React website with contact form integration (email), routing, CTA sections, WhatsApp/Instagram links, and legal pages.",
       "es": "React Web real responsive con formulario de contacto integrado (email), routing, secciones CTA, enlaces a WhatsApp/Instagram y páginas legales."
     },
-    "icons": ["HTML.png", "css.png", "Typescript.png", "react.png"],
+    "icons": ["HTML.png", "css.png", "Typescript.png", "react.png", "vite.png"],
     "url": "https://www.psicologiaceliaconde.com/",
     "github": "https://github.com/ChioArenillas/CeliaConde"
   },
@@ -23,7 +23,7 @@
       "en": "Built a SaaS-style web application, featuring a user portal with Firebase authentication, dynamic boards and task management, and full CRUD functionality.",
       "es": "Aplicación web tipo SaaS con portal de usuario, autenticación con Firebase, tableros dinámicos, gestión de tareas y funcionalidad CRUD completa."
     },
-    "icons": ["HTML.png", "css.png", "Typescript.png", "react.png"],
+    "icons": ["HTML.png", "css.png", "Typescript.png", "react.png", "vite.png", "vitest.png"],
     "url": "https://fokus.vercel.app/",
     "github": "https://github.com/ChioArenillas/Fokus"
   },  
@@ -62,7 +62,8 @@
       "HTML.png",
       "css.png",
       "javascript.png",
-      "react.png"
+      "react.png",
+       "vite.png"
 ],
     "url": "https://van-life-web.vercel.app/",
     "github": "https://github.com/ChioArenillas/VanLife"
