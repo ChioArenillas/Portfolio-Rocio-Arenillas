@@ -69,6 +69,26 @@
     "github": "https://github.com/ChioArenillas/VanLife"
   },
   {
+  "title": {
+    "en": "Travel Customer Web App",
+    "es": "Web de Viaje para Clientes"
+  },
+  "imageSrc": "Viajes.png",
+  "description": {
+    "en": "Responsive React web application developed for travel participants. Includes itinerary, maps, travel tips and essential information to improve the travel experience.",
+    "es": "Aplicación web responsive desarrollada en React para los participantes de un viaje. Incluye itinerario, mapas, consejos de viaje e información esencial para mejorar la experiencia del viaje."
+  },
+  "icons": [
+    "HTML.png",
+    "css.png",
+    "Typescript.png",
+    "react.png",
+    "nextjs.png"
+  ],
+  "url": "https://cabo-verde.vercel.app/",
+  "github": "https://github.com/ChioArenillas/CaboVerde"
+},
+  {
     "title": {
       "en": "3D products Marketplace",
       "es": "Marketplace productos 3D"
