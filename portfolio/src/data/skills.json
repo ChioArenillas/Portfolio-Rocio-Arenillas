@@ -54,6 +54,10 @@
     {
         "title": "Vitest",
         "imageSrc": "vitest.png"
+    },
+        {
+        "title": "RTL",
+        "imageSrc": "reactTesting.png"
     }
 
 ]
