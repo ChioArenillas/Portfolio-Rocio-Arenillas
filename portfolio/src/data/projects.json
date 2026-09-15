@@ -1,8 +1,8 @@
 [
   {
     "title": {
-      "en": "Psychologist Web (Freelance)",
-      "es": "Web Psicóloga (Freelance)"
+      "en": "Psychologist Web",
+      "es": "Web Psicóloga"
     },
     "imageSrc": "Psicologa.png",
     "description": {
@@ -88,6 +88,25 @@
   ],
   "url": "https://cabo-verde.vercel.app/",
   "github": "https://github.com/ChioArenillas/CaboVerde"
+},
+  {
+  "title": {
+    "en": "Shooping List",
+    "es": "Lista de la compra"
+  },
+  "imageSrc": "Shopping.png",
+ "description": {
+    "en": "Responsive shopping list web application built with Material UI and React Testing Library. Includes product management, quantities, categories, purchase status and a dashboard with shopping summary.",
+    "es": "Aplicación web responsive de lista de la compra desarrollada con Material UI y React Testing Library. Incluye gestión de productos, cantidades, categorías, estado de compra y un dashboard con resumen de la lista."
+  },
+    "icons": [
+    "Typescript.png",
+    "react.png",
+    "nextjs.png",
+    "RTL.png"
+  ],
+  "url": "https://shopping-orpin-theta.vercel.app/",
+  "github": "https://github.com/ChioArenillas/Shopping"
 },
   {
     "title": {
