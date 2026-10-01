@@ -1,5 +1,24 @@
 [
   {
+  "title": {
+    "en": "AI copilot",
+    "es": "Copilot IA"
+  },
+  "imageSrc": "weroad-copilot.png",
+"description": {
+    "en": "Full-stack AI assistant for trip coordinators that features Telegram chat ingestion, source traceability badging, and automated contextual recommendations via AI.",
+    "es": "Asistente Full Stack con IA para coordinadores que permite subir exports de Telegram, traza el origen de cada dato con badges y genera recomendaciones contextuales con IA."
+  },
+      "icons": [
+      "Typescript.png",
+      "react.png",
+      "vite.png",
+      "Python.png"
+    ],
+    "url": "https://weroad-copilot.vercel.app/",
+    "github": "https://github.com/ChioArenillas/weroad-copilot"
+},
+  {
     "title": {
       "en": "Psychologist Web",
       "es": "Web Psicóloga"
