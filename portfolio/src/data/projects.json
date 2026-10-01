@@ -67,6 +67,25 @@
     "url": "https://fokus.vercel.app/",
     "github": "https://github.com/ChioArenillas/Fokus"
   },  
+  {
+  "title": {
+    "en": "Wind Farm Feasibility Portal",
+    "es": "Portal de Viabilidad Eólica"
+  },
+  "imageSrc": "AEMET.png",
+  "description": {
+    "en": "Full-stack analytics portal using AEMET OpenData. Features cache-aside SQLite persistence, dynamic CET/CEST timezone handling, and CSV dataset export.",
+    "es": "Plataforma analítica Full Stack con AEMET OpenData. Incluye persistencia y caché con SQLite, gestión dinámica y exportación a CSV."
+  },
+  "icons": [
+    "Typescript.png",
+    "react.png",
+    "vite.png",
+    "Python.png"
+  ],
+  "url": "https://inima-dusky.vercel.app/",
+  "github": "https://github.com/ChioArenillas/Inima"
+},
 
   {
     "title": {
