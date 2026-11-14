@@ -5,11 +5,13 @@ import App from './App.jsx'
 import "@fontsource/outfit"
 import "@fontsource/roboto"
 import LanguageProvider from './context/LanguageContext.jsx'
+import Analytics from "@vercel/analytics/next"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LanguageProvider>
     <App />
     </LanguageProvider>
+    <Analytics/>
   </StrictMode>,
 )
