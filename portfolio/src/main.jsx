@@ -5,7 +5,7 @@ import App from './App.jsx'
 import "@fontsource/outfit"
 import "@fontsource/roboto"
 import LanguageProvider from './context/LanguageContext.jsx'
-import Analytics from "@vercel/analytics/next"
+import Analytics from "@vercel/analytics/react"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
