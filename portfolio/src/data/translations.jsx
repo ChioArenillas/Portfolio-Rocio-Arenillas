@@ -9,9 +9,11 @@ export const translations = {
     },
     hero: {
       design: "DESIGN",
-      designer: "UX UI Designer",
+      designerMain: "UX UI",
+      designerHighlight: "Designer",
       code: "<CODE/>",
-      developer: "Frontend Developer",
+      developerMain: "Frontend",
+      developerHighlight: "Developer",
     },
     about: {
       kicker: "About",
@@ -73,6 +75,7 @@ export const translations = {
       messageLabel: "Message:",
       messagePlaceholder: "Type your message here...",
       submitBtn: "Say Hello!",
+      sendingBtn: "Sending...",
       successMessage: "✔️ Your message has been sent! I'll get back to you soon 💌",
       errorMessage: "Something went wrong, try again later.",
     },
@@ -91,9 +94,11 @@ export const translations = {
     },
     hero: {
       design: "DISEÑO",
-      designer: "Diseñadora UX UI",
+      designerMain: "Diseñadora",
+      designerHighlight: "UX UI",
       code: "<CODE/>",
-      developer: "Frontend Developer",
+      developerMain: "Frontend",
+      developerHighlight: "Developer",
     },
     about: {
       kicker: "Sobre mí",
@@ -159,6 +164,7 @@ description: (styles) => (
       messageLabel: "Mensaje:",
       messagePlaceholder: "Escribe aquí tu mensaje...",
       submitBtn: "¡Decir Hola!",
+      sendingBtn: "Enviando...",
       successMessage: "✔️ ¡Tu mensaje ha sido enviado! Te responderé pronto 💌",
       errorMessage: "Algo salió mal, inténtalo de nuevo más tarde.",
     },

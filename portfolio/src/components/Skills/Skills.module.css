@@ -12,10 +12,17 @@
 }
 
 .slider {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   width: 100%;
   cursor: grab;
   padding: 20px 0;
+  user-select: none;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
 }
 
 .slider:active {
@@ -25,21 +32,6 @@
 .track {
   display: flex;
   width: max-content;
-  animation: scroll 25s linear infinite;
-  will-change: transform;
-}
-
-:root {
-  --scroll-width: 2000px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-50%));
-  }
 }
 
 .item {

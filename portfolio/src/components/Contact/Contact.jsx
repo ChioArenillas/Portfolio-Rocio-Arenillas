@@ -5,23 +5,37 @@ import linkedin from "../../assets/contact/linkedinIcon.png";
 import { useLanguage } from "../../context/LanguageContext";
 
 export default function Contact() {
-  const {t} = useLanguage()
-  const [sent, setSent] = useState(false);
+  const { t } = useLanguage();
+  const [status, setStatus] = useState("idle");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (status === "submitting") return;
 
     const form = e.target;
+    setStatus("submitting");
 
-    fetch("https://formsubmit.co/arenillasr@gmail.com", {
-      method: "POST",
-      body: new FormData(form),
-    })
-      .then(() => {
-        setSent(true);
-        form.reset();
-      })
-      .catch(() => alert(t.contact.errorMessage));
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/ajax/arenillasr@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: new FormData(form),
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error(`Form submission failed with status ${response.status}`);
+      }
+
+      setStatus("success");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -50,7 +64,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <p>{t.contact.intro}</p>
+          <div>{t.contact.intro}</div>
         </div>
 
         <form className={styles.box} onSubmit={handleSubmit}>
@@ -83,13 +97,25 @@ export default function Contact() {
 
           <input type="hidden" name="_captcha" value="false" />
 
-          <button type="submit" className={styles.btn}>
-            {t.contact.submitBtn}
+          <button
+            type="submit"
+            className={styles.btn}
+            disabled={status === "submitting"}
+          >
+            {status === "submitting"
+              ? t.contact.sendingBtn
+              : t.contact.submitBtn}
           </button>
 
-          {sent && (
-            <p className={styles.successMessage}>
+          {status === "success" && (
+            <p className={styles.successMessage} role="status">
               {t.contact.successMessage}
+            </p>
+          )}
+
+          {status === "error" && (
+            <p className={styles.errorMessage} role="alert">
+              {t.contact.errorMessage}
             </p>
           )}
         </form>

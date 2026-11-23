@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import styles from "./Projects.module.css";
 
@@ -6,56 +6,65 @@ import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
 import { useLanguage } from "../../context/LanguageContext";
 
+const getCardsPerPage = () => (window.innerWidth < 830 ? 5 : 9);
+
 export const Projects = () => {
-  const {t} = useLanguage()
-  const [cardsPerPage, setCardsPerPage] = useState(9);
+  const { t } = useLanguage();
+  const sectionRef = useRef(null);
+  const [cardsPerPage, setCardsPerPage] = useState(getCardsPerPage);
+  const [page, setPage] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 830) {
-        setCardsPerPage(5);
-      } else {
-        setCardsPerPage(9);
-      }
+      const nextCardsPerPage = getCardsPerPage();
+      setCardsPerPage(nextCardsPerPage);
+      setPage((currentPage) => {
+        const nextTotalPages = Math.ceil(projects.length / nextCardsPerPage);
+        return Math.min(currentPage, nextTotalPages - 1);
+      });
     };
 
-    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const [page, setPage] = useState(0);
-
-  const start = page * cardsPerPage;
+  const totalPages = Math.ceil(projects.length / cardsPerPage);
+  const safePage = Math.min(page, totalPages - 1);
+  const start = safePage * cardsPerPage;
   const end = start + cardsPerPage;
   const itemsToShow = projects.slice(start, end);
 
-  const totalPages = Math.ceil(projects.length / cardsPerPage);
+  const scrollToProjects = () => {
+    sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const nextPage = () => {
-    setPage((p) => (p + 1) % totalPages);
-    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+    setPage((p) => (Math.min(p, totalPages - 1) + 1) % totalPages);
+    scrollToProjects();
   };
 
   const prevPage = () => {
-    setPage((p) => (p - 1 + totalPages) % totalPages);
-    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+    setPage((p) => (Math.min(p, totalPages - 1) - 1 + totalPages) % totalPages);
+    scrollToProjects();
   };
+
   return (
-    <section className={`reveal ${styles.container}`} id="Projects">
+    <section
+      ref={sectionRef}
+      className={`reveal ${styles.container}`}
+      id="Projects"
+    >
       <div className={styles.projectsBackground}>
         <div className={styles.header}>
           <span className={styles.kicker}>{t.projects.kicker}</span>
           <h2 className={styles.title}>{t.projects.title}</h2>
-          <p className={styles.subtitle}>
-            {t.projects.subtitle}
-          </p>
+          <p className={styles.subtitle}>{t.projects.subtitle}</p>
         </div>
 
         <div className={styles.projects}>
-          {itemsToShow.map((project, id) => (
-            <ProjectCard key={id} project={project} />
+          {itemsToShow.map((project) => (
+            <ProjectCard key={project.url} project={project} />
           ))}
         </div>
 
@@ -65,7 +74,7 @@ export const Projects = () => {
           </button>
 
           <span className={styles.pageIndicator}>
-            {page + 1} / {totalPages}
+            {safePage + 1} / {totalPages}
           </span>
 
           <button className={styles.arrow} onClick={nextPage}>

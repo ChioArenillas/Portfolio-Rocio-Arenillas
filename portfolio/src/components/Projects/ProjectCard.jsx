@@ -4,56 +4,22 @@ import figmaIcon from "../../assets/contact/figmaIcon.png";
 
 import styles from "./ProjectCard.module.css";
 import { useLanguage } from "../../context/LanguageContext";
-
-const images = import.meta.glob("/src/assets/projects/*", {
-  eager: true,
-  import: "default",
-});
-
-const skillsIcons = import.meta.glob("/src/assets/skills/*", {
-  eager: true,
-  import: "default",
-});
+import { getProjectImage, getSkillIcon } from "../../utils/assets";
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, icons, url, github, figma },
 }) => {
-  const {language} = useLanguage()
-  const getImage = (file) => {
-    const baseName = file.split(".")[0];
-    const entry = Object.entries(images).find(([path]) =>
-      path.includes(baseName),
-    );
-    return entry?.[1];
-  };
+  const { language } = useLanguage();
 
-  const getSkillsIcon = (file) => {
-    const baseName = file.split(".")[0];
-    const entry = Object.entries(skillsIcons).find(([path]) =>
-      path.includes(baseName),
-    );
-    return entry?.[1];
-  };
+  const cardTitle =
+    typeof title === "string"
+      ? title
+      : title?.[language] || title?.en || "";
 
-    const getTitle = () => {
-    if(typeof title === "string"){
-      return title
-    }
-    if(title && typeof title === "object"){
-      return title[language] || title.en
-    }
-    return ""
-  }
-
-  const getDescription = () => {
-    if(typeof description === "string"){
-      return description
-    }
-    if(description && typeof description === "object"){
-      return description[language] || description.en
-    }
-    return ""
-  }
+  const cardDescription =
+    typeof description === "string"
+      ? description
+      : description?.[language] || description?.en || "";
 
   return (
     <div className={styles.container}>
@@ -63,20 +29,24 @@ export const ProjectCard = ({
         rel="noopener noreferrer"
         className={styles.imageLink}
       >
-        <img src={getImage(imageSrc)} alt={title} className={styles.image} />
+        <img
+          src={getProjectImage(imageSrc)}
+          alt={cardTitle}
+          className={styles.image}
+        />
       </a>
 
-      <h3 className={styles.titleCard}>{getTitle()}</h3>
+      <h3 className={styles.titleCard}>{cardTitle}</h3>
 
-      <p className={styles.description}>{getDescription()}</p>
+      <p className={styles.description}>{cardDescription}</p>
 
       <ul className={styles.skills}>
-        {icons.map((iconFile, id) => (
-          <li key={id}>
+        {icons.map((iconFile) => (
+          <li key={iconFile}>
             <img
               className={styles.skill}
-              src={getSkillsIcon(iconFile)}
-              alt={iconFile}
+              src={getSkillIcon(iconFile)}
+              alt={iconFile.replace(/\.[^.]+$/, "")}
             />
           </li>
         ))}
