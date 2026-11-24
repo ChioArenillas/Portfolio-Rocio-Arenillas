@@ -1,38 +1,37 @@
-import React from "react";
 import styles from "./About.module.css";
 import github from "../../assets/contact/githubIcon.png";
 import linkedin from "../../assets/contact/linkedinIcon.png";
-import about from "../../assets/about/aboutImg.jpg";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../hooks/useLanguage";
+import { PROFILE_LINKS } from "../../data/profile";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function About() {
-  const {t} = useLanguage()
+  const { t } = useLanguage();
 
   return (
     <section className={`reveal ${styles.container}`} id="About">
       <div className={styles.content}>
-        <div className={styles.header}>
-          <span className={styles.kicker}>{t.about.kicker}</span>
-          <h1 className={styles.title}>{t.about.title}</h1>
-          <p className={styles.subtitle}>{t.about.subtitle}</p>
-        </div>
-        <div>
-          {t.about.description(styles)}
-        </div>
+        <SectionHeader
+          as="h1"
+          kicker={t.about.kicker}
+          title={t.about.title}
+          subtitle={t.about.subtitle}
+        />
+        <div>{t.about.description(styles)}</div>
         <div className={styles.btnsection}>
           <div className={styles.cv}>
-            <div className={styles.btn}>
+            <div className={`btn ${styles.btn}`}>
               <a
-                className={styles.download}
+                className={`download ${styles.download}`}
                 href={t.about.cvLink}
                 target="_blank"
               >
                 {t.about.downloadCV}
               </a>
             </div>
-            <div className={styles.btn}>
+            <div className={`btn ${styles.btn}`}>
               <a
-                className={styles.download}
+                className={`download ${styles.download}`}
                 href={t.about.coverLetterLink}
                 target="_blank"
               >
@@ -42,14 +41,14 @@ export default function About() {
           </div>
           <div className={styles.socials}>
             <a
-              href="https://github.com/ChioArenillas"
+              href={PROFILE_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
             >
               <img className={styles.social} src={github} alt="github" />
             </a>
             <a
-              href="https://www.linkedin.com/in/roc%C3%ADo-arenillas-627813279/"
+              href={PROFILE_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
             >

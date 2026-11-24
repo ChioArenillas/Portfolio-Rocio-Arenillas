@@ -1,8 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import styles from "./Skills.module.css";
-import skills from "/src/data/skills.json";
-import { useLanguage } from "../../context/LanguageContext";
+import skills from "../../data/skills.json";
+import { useLanguage } from "../../hooks/useLanguage";
 import { getSkillIcon } from "../../utils/assets";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function Skills() {
   const { t } = useLanguage();
@@ -149,11 +150,11 @@ export default function Skills() {
 
   return (
     <section className={`reveal ${styles.container}`} id="Skills">
-      <div className={styles.header}>
-        <span className={styles.kicker}>{t.skills.kicker}</span>
-        <h1 className={styles.title}>{t.skills.title}</h1>
-        <p className={styles.subtitle}>{t.skills.subtitle}</p>
-      </div>
+      <SectionHeader
+        kicker={t.skills.kicker}
+        title={t.skills.title}
+        subtitle={t.skills.subtitle}
+      />
 
       <div className={styles.slider} ref={sliderRef}>
         <div className={styles.track}>

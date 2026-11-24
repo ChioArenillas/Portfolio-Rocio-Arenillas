@@ -2,9 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family:
-    "Lucida Grande", "Lucida Sans Unicode", Verdana, "Roboto Condensed",
-    sans-serif;
+  font-family: var(--font-main);
 }
 
 #About,
@@ -19,6 +17,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -30,6 +29,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 body {
   background: linear-gradient(
     180deg,
@@ -40,34 +40,12 @@ body {
   );
   color: var(--color-text-dark);
 }
-.header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.kicker {
-  font-size: var(--font-size-text);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--color-secondary);
-}
-
-.title {
-  font-size: var(--font-size-title);
-  font-weight: 800;
-  margin: 10px 0;
-  color: var(--color-dark);
-}
-
-.subtitle {
-  font-size: var(--font-size-small-text);
-  opacity: 0.7;
-}
 
 .download {
   text-decoration: none;
   color: var(--color-text-light);
 }
+
 .btn {
   width: fit-content;
   margin-left: auto;
@@ -87,19 +65,20 @@ body {
   background: var(--color-dark);
   transform: scale(1.1);
 }
+
 .btn a:hover {
   background: var(--color-dark);
   transform: scale(1.1);
 }
 
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
 @media screen and (max-width: 830px) {
   .btn {
-    font-size: var(--font-size-small-text);
-  }
-  .title{
-    font-size: var(--font-size-small-title);
-  }
-  .subtitle{
     font-size: var(--font-size-small-text);
   }
 }

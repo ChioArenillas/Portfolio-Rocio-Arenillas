@@ -1,9 +1,8 @@
-import React from "react";
 import githubIcon from "../../assets/contact/githubIcon.png";
 import figmaIcon from "../../assets/contact/figmaIcon.png";
 
 import styles from "./ProjectCard.module.css";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../hooks/useLanguage";
 import { getProjectImage, getSkillIcon } from "../../utils/assets";
 
 export const ProjectCard = ({

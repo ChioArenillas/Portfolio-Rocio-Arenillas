@@ -1,6 +1,3 @@
-@import "../../vars.css";
-@import "../../index.css";
-
 .navbarBg {
   position: sticky;
   margin-top: 10px;
@@ -86,6 +83,8 @@
   font-size: 24px;
   padding: 5px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
   transition: 0.2s ease;
 }
 

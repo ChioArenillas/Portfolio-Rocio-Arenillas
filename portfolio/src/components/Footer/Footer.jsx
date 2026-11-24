@@ -1,17 +1,11 @@
-import React from 'react'
 import styles from "./Footer.module.css";
-import github from "../../assets/contact/githubIcon.png";
-import figma from "../../assets/contact/figmaIcon.png";
-import { useLanguage } from '../../context/LanguageContext';
-
+import { useLanguage } from "../../hooks/useLanguage";
 
 export default function Footer() {
-  const {t} = useLanguage()
+  const { t } = useLanguage();
   return (
     <footer className={styles.footer}>
-        <div className={styles.content}>
-          {t.footer.text}
-        </div>
+      <div className={styles.content}>{t.footer.text}</div>
     </footer>
-  )
+  );
 }

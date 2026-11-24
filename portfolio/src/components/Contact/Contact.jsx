@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./Contact.module.css";
 import github from "../../assets/contact/githubIcon.png";
 import linkedin from "../../assets/contact/linkedinIcon.png";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../hooks/useLanguage";
+import { PROFILE_LINKS } from "../../data/profile";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -16,16 +18,13 @@ export default function Contact() {
     setStatus("submitting");
 
     try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/arenillasr@gmail.com",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-          },
-          body: new FormData(form),
+      const response = await fetch(PROFILE_LINKS.contactEndpoint, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
         },
-      );
+        body: new FormData(form),
+      });
 
       if (!response.ok) {
         throw new Error(`Form submission failed with status ${response.status}`);
@@ -40,23 +39,23 @@ export default function Contact() {
 
   return (
     <section className={`reveal ${styles.container}`} id="Contact">
-      <div className={styles.header}>
-        <span className={styles.kicker}>{t.contact.kicker}</span>
-        <h2 className={styles.title}>{t.contact.title}</h2>
-        <p className={styles.subtitle}>{t.contact.subtitle}</p>
-      </div>
+      <SectionHeader
+        kicker={t.contact.kicker}
+        title={t.contact.title}
+        subtitle={t.contact.subtitle}
+      />
       <div className={styles.content}>
         <div className={styles.text}>
           <div className={styles.socials}>
             <a
-              href="https://github.com/ChioArenillas"
+              href={PROFILE_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
             >
               <img className={styles.social} src={github} alt="github" />
             </a>
             <a
-              href="https://www.linkedin.com/in/roc%C3%ADo-arenillas-627813279/"
+              href={PROFILE_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -99,7 +98,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className={styles.btn}
+            className="btn"
             disabled={status === "submitting"}
           >
             {status === "submitting"

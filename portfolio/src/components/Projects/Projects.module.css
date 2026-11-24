@@ -1,23 +1,8 @@
-@import "../../vars.css";
-@import "../../index.css";
-
 .container {
   width: 100%;
 
   color: var(--color-text-dark);
 }
-
-.kicker {
-  color: var(--color-text-light);
-}
-.title {
-  color: var(--color-text-light);
-}
-
-.subtitle {
-  color: var(--color-text-light);
-}
-
 
 .projectsBackground {
   background: linear-gradient(

@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./Hero.module.css";
 import topPicture from "../../assets/hero/top-picture.jpg";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../hooks/useLanguage";
 
 export default function Hero() {
   const { t } = useLanguage();

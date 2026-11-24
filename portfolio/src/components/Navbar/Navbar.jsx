@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 import closeIcon from "../../assets/nav/closeIcon.png";
 import menuIcon from "../../assets/nav/menuIcon.png";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../hooks/useLanguage";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const {t, language, toggleLanguage} = useLanguage()
+  const { t, language, toggleLanguage } = useLanguage();
 
   return (
     <nav className={styles.navbarBg}>
@@ -45,7 +45,6 @@ export default function Navbar() {
             className={styles.langBtn}
             onClick={toggleLanguage}
             title={language === "en" ? "Cambiar a español" : "Switch to English"}
-            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '5px', fontSize: '24px', display: 'flex', alignItems: 'center' }}
           >
             {language === "en" ? (
               // Bandera España SVG

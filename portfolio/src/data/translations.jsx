@@ -1,4 +1,6 @@
 
+import { PROFILE_LINKS } from "./profile";
+
 export const translations = {
   en: {
     nav: {
@@ -81,9 +83,9 @@ export const translations = {
     },
     footer: {
       text: (
-          <p>&#169; 2025 | <a href="https://www.figma.com/design/FR1RaEwYZDjq3avU5jjOEo/Roc%C3%ADo-Arenillas-CV?node-id=0-1">Designed</a> and <a href="https://github.com/ChioArenillas/Portfolio-Rocio-Arenillas.git">code</a> ❤️️ by Rocio Arenillas </p>
+        <p>&#169; 2025 | <a href={PROFILE_LINKS.figmaDesign}>Designed</a> and <a href={PROFILE_LINKS.portfolioRepo}>code</a> ❤️️ by Rocio Arenillas </p>
       ),
-        },
+    },
   },
   es: {
     nav: {
@@ -170,7 +172,7 @@ description: (styles) => (
     },
     footer: {
       text: (
-          <p>&#169; 2025 | <a href="https://www.figma.com/design/FR1RaEwYZDjq3avU5jjOEo/Roc%C3%ADo-Arenillas-CV?node-id=0-1">Diseñado</a> y <a href="https://github.com/ChioArenillas/Portfolio-Rocio-Arenillas.git">desarrollado</a> ❤️️ por Rocio Arenillas </p>
+        <p>&#169; 2025 | <a href={PROFILE_LINKS.figmaDesign}>Diseñado</a> y <a href={PROFILE_LINKS.portfolioRepo}>desarrollado</a> ❤️️ por Rocio Arenillas </p>
       ),
     },
   },

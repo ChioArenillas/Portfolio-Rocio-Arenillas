@@ -1,5 +1,4 @@
 
-import styles from "./App.module.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -7,14 +6,13 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import useReveal from "./components/useReveal";
-
+import useReveal from "./hooks/useReveal";
 
 export default function App() {
-  useReveal()
+  useReveal();
 
   return (
-    <div className={styles.App}> 
+    <div>
       <Navbar />
       <Hero />
       <About />

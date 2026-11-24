@@ -1,17 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import './vars.css'
 import './index.css'
 import App from './App.jsx'
-import "@fontsource/outfit"
-import "@fontsource/roboto"
 import LanguageProvider from './context/LanguageContext.jsx'
 import { Analytics } from "@vercel/analytics/react"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LanguageProvider>
-    <App />
+      <App />
     </LanguageProvider>
-    <Analytics/>
+    <Analytics />
   </StrictMode>,
 )

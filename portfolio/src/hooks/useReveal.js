@@ -9,12 +9,13 @@ export default function useReveal() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
+            observer.unobserve(entry.target);
           }
         });
       },
       {
         threshold: 0.15,
-      }
+      },
     );
 
     elements.forEach((el) => observer.observe(el));

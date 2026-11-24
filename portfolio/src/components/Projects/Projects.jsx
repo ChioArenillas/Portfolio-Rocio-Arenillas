@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import styles from "./Projects.module.css";
 
 import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../hooks/useLanguage";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 const getCardsPerPage = () => (window.innerWidth < 830 ? 5 : 9);
 
@@ -56,11 +57,12 @@ export const Projects = () => {
       id="Projects"
     >
       <div className={styles.projectsBackground}>
-        <div className={styles.header}>
-          <span className={styles.kicker}>{t.projects.kicker}</span>
-          <h2 className={styles.title}>{t.projects.title}</h2>
-          <p className={styles.subtitle}>{t.projects.subtitle}</p>
-        </div>
+        <SectionHeader
+          kicker={t.projects.kicker}
+          title={t.projects.title}
+          subtitle={t.projects.subtitle}
+          variant="light"
+        />
 
         <div className={styles.projects}>
           {itemsToShow.map((project) => (
