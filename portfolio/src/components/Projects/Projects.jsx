@@ -70,19 +70,32 @@ export const Projects = () => {
           ))}
         </div>
 
-        <div className={styles.pagination}>
-          <button className={styles.arrow} onClick={prevPage}>
-            ❮
+        <nav
+          className={styles.pagination}
+          aria-label={t.projects.paginationLabel}
+        >
+          <button
+            type="button"
+            className={styles.arrow}
+            onClick={prevPage}
+            aria-label={t.projects.prevPage}
+          >
+            <span aria-hidden="true">❮</span>
           </button>
 
-          <span className={styles.pageIndicator}>
+          <span className={styles.pageIndicator} aria-live="polite">
             {safePage + 1} / {totalPages}
           </span>
 
-          <button className={styles.arrow} onClick={nextPage}>
-            ❯
+          <button
+            type="button"
+            className={styles.arrow}
+            onClick={nextPage}
+            aria-label={t.projects.nextPage}
+          >
+            <span aria-hidden="true">❯</span>
           </button>
-        </div>
+        </nav>
       </div>
     </section>
   );

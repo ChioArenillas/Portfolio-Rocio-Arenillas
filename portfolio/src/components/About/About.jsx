@@ -20,39 +20,39 @@ export default function About() {
         <div>{t.about.description(styles)}</div>
         <div className={styles.btnsection}>
           <div className={styles.cv}>
-            <div className={`btn ${styles.btn}`}>
-              <a
-                className={`download ${styles.download}`}
-                href={t.about.cvLink}
-                target="_blank"
-              >
-                {t.about.downloadCV}
-              </a>
-            </div>
-            <div className={`btn ${styles.btn}`}>
-              <a
-                className={`download ${styles.download}`}
-                href={t.about.coverLetterLink}
-                target="_blank"
-              >
-                {t.about.coverLetter}
-              </a>
-            </div>
+            <a
+              className={`btn download ${styles.downloadBtn}`}
+              href={t.about.cvLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.about.downloadCV}
+            </a>
+            <a
+              className={`btn download ${styles.downloadBtn}`}
+              href={t.about.coverLetterLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.about.coverLetter}
+            </a>
           </div>
           <div className={styles.socials}>
             <a
               href={PROFILE_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              <img className={styles.social} src={github} alt="github" />
+              <img className={styles.social} src={github} alt="" aria-hidden="true" />
             </a>
             <a
               href={PROFILE_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
-              <img className={styles.social} src={linkedin} alt="linkedin" />
+              <img className={styles.social} src={linkedin} alt="" aria-hidden="true" />
             </a>
           </div>
         </div>

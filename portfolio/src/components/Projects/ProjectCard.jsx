@@ -3,12 +3,16 @@ import figmaIcon from "../../assets/contact/figmaIcon.png";
 
 import styles from "./ProjectCard.module.css";
 import { useLanguage } from "../../hooks/useLanguage";
-import { getProjectImage, getSkillIcon } from "../../utils/assets";
+import {
+  getProjectImage,
+  getSkillIcon,
+  getSkillLabel,
+} from "../../utils/assets";
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, icons, url, github, figma },
 }) => {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
 
   const cardTitle =
     typeof title === "string"
@@ -21,12 +25,13 @@ export const ProjectCard = ({
       : description?.[language] || description?.en || "";
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.imageLink}
+        aria-label={`${t.projects.viewProject}: ${cardTitle}`}
       >
         <img
           src={getProjectImage(imageSrc)}
@@ -40,15 +45,19 @@ export const ProjectCard = ({
       <p className={styles.description}>{cardDescription}</p>
 
       <ul className={styles.skills}>
-        {icons.map((iconFile) => (
-          <li key={iconFile}>
-            <img
-              className={styles.skill}
-              src={getSkillIcon(iconFile)}
-              alt={iconFile.replace(/\.[^.]+$/, "")}
-            />
-          </li>
-        ))}
+        {icons.map((iconFile) => {
+          const label = getSkillLabel(iconFile);
+          return (
+            <li key={iconFile}>
+              <img
+                className={styles.skill}
+                src={getSkillIcon(iconFile)}
+                alt={label}
+                title={label}
+              />
+            </li>
+          );
+        })}
       </ul>
 
       <div className={styles.links}>
@@ -58,9 +67,14 @@ export const ProjectCard = ({
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconButton}
-            aria-label="View code on GitHub"
+            aria-label={`${t.projects.viewGithub}: ${cardTitle}`}
           >
-            <img className={styles.icons} src={githubIcon} alt="GitHub" />
+            <img
+              className={styles.icons}
+              src={githubIcon}
+              alt=""
+              aria-hidden="true"
+            />
           </a>
         )}
 
@@ -70,12 +84,17 @@ export const ProjectCard = ({
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconButton}
-            aria-label="View design on Figma"
+            aria-label={`${t.projects.viewFigma}: ${cardTitle}`}
           >
-            <img className={styles.icons} src={figmaIcon} alt="Figma" />
+            <img
+              className={styles.icons}
+              src={figmaIcon}
+              alt=""
+              aria-hidden="true"
+            />
           </a>
         )}
       </div>
-    </div>
+    </article>
   );
 };

@@ -51,15 +51,27 @@ export default function Contact() {
               href={PROFILE_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              <img className={styles.social} src={github} alt="github" />
+              <img
+                className={styles.social}
+                src={github}
+                alt=""
+                aria-hidden="true"
+              />
             </a>
             <a
               href={PROFILE_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
-              <img className={styles.social} src={linkedin} alt="linkedin" />
+              <img
+                className={styles.social}
+                src={linkedin}
+                alt=""
+                aria-hidden="true"
+              />
             </a>
           </div>
 
@@ -67,26 +79,37 @@ export default function Contact() {
         </div>
 
         <form className={styles.box} onSubmit={handleSubmit}>
-          <p className={styles.inputTitle}>{t.contact.nameLabel}</p>
+          <label htmlFor="contact-name" className={styles.inputTitle}>
+            {t.contact.nameLabel}
+          </label>
           <input
+            id="contact-name"
             className={styles.input}
             placeholder={t.contact.namePlaceholder}
             type="text"
             name="name"
+            autoComplete="name"
             required
           />
 
-          <p className={styles.inputTitle}>{t.contact.emailLabel}</p>
+          <label htmlFor="contact-email" className={styles.inputTitle}>
+            {t.contact.emailLabel}
+          </label>
           <input
+            id="contact-email"
             className={styles.input}
             placeholder={t.contact.emailPlaceholder}
             type="email"
             name="email"
+            autoComplete="email"
             required
           />
 
-          <p className={styles.inputTitle}>{t.contact.messageLabel}</p>
+          <label htmlFor="contact-message" className={styles.inputTitle}>
+            {t.contact.messageLabel}
+          </label>
           <textarea
+            id="contact-message"
             className={styles.input}
             placeholder={t.contact.messagePlaceholder}
             rows="5"
@@ -106,17 +129,19 @@ export default function Contact() {
               : t.contact.submitBtn}
           </button>
 
-          {status === "success" && (
-            <p className={styles.successMessage} role="status">
-              {t.contact.successMessage}
-            </p>
-          )}
+          <div aria-live="polite">
+            {status === "success" && (
+              <p className={styles.successMessage} role="status">
+                {t.contact.successMessage}
+              </p>
+            )}
 
-          {status === "error" && (
-            <p className={styles.errorMessage} role="alert">
-              {t.contact.errorMessage}
-            </p>
-          )}
+            {status === "error" && (
+              <p className={styles.errorMessage} role="alert">
+                {t.contact.errorMessage}
+              </p>
+            )}
+          </div>
         </form>
       </div>
     </section>

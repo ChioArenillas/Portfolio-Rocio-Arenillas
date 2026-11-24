@@ -136,11 +136,11 @@ export default function Skills() {
     };
   }, []);
 
-  const renderSkillItem = (skill, key) => (
-    <div key={key} className={styles.item}>
+  const renderSkillItem = (skill, key, isDuplicate = false) => (
+    <div key={key} className={styles.item} aria-hidden={isDuplicate || undefined}>
       <img
         src={getSkillIcon(skill.imageSrc)}
-        alt={skill.title}
+        alt={isDuplicate ? "" : skill.title}
         className={styles.logo}
         draggable={false}
       />
@@ -159,7 +159,9 @@ export default function Skills() {
       <div className={styles.slider} ref={sliderRef}>
         <div className={styles.track}>
           {skills.map((skill) => renderSkillItem(skill, skill.title))}
-          {skills.map((skill) => renderSkillItem(skill, `dup-${skill.title}`))}
+          {skills.map((skill) =>
+            renderSkillItem(skill, `dup-${skill.title}`, true),
+          )}
         </div>
       </div>
     </section>

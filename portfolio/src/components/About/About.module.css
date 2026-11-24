@@ -37,12 +37,12 @@
   gap: 12px;
 }
 
-.btn {
+.downloadBtn {
   display: inline-flex;
-}
-
-.download {
-  padding: 10px 16px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  padding: 12px 18px;
 }
 
 .socials {
@@ -84,8 +84,8 @@
 }
 
 @media (max-width: 500px) {
-  .download {
+  .downloadBtn {
     font-size: 13px;
-    padding: 8px 14px;
+    padding: 10px 14px;
   }
 }

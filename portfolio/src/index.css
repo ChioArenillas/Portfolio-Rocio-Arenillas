@@ -77,6 +77,31 @@ body {
   transform: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-dark);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .btn:hover,
+  .btn a:hover {
+    transform: none;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .btn {
     font-size: var(--font-size-small-text);

@@ -4,10 +4,14 @@ import { PROFILE_LINKS } from "./profile";
 export const translations = {
   en: {
     nav: {
+      ariaLabel: "Primary navigation",
       about: "About",
       skills: "Skills & Tools",
       projects: "Projects",
       contact: "Contact",
+      openMenu: "Open navigation menu",
+      closeMenu: "Close navigation menu",
+      switchLanguage: "Cambiar a español",
     },
     hero: {
       design: "DESIGN",
@@ -56,6 +60,12 @@ export const translations = {
       kicker: "My Work",
       title: "< Projects />",
       subtitle: "Selected projects I’ve built in frontend and UI design",
+      paginationLabel: "Projects pagination",
+      prevPage: "Previous projects page",
+      nextPage: "Next projects page",
+      viewProject: "Open live project",
+      viewGithub: "View code on GitHub",
+      viewFigma: "View design on Figma",
     },
     contact: {
       kicker: "Get in touch",
@@ -83,16 +93,38 @@ export const translations = {
     },
     footer: {
       text: (
-        <p>&#169; 2025 | <a href={PROFILE_LINKS.figmaDesign}>Designed</a> and <a href={PROFILE_LINKS.portfolioRepo}>code</a> ❤️️ by Rocio Arenillas </p>
+        <p>
+          &#169; 2025 |{" "}
+          <a
+            href={PROFILE_LINKS.figmaDesign}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Designed
+          </a>{" "}
+          and{" "}
+          <a
+            href={PROFILE_LINKS.portfolioRepo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            code
+          </a>{" "}
+          ❤️️ by Rocio Arenillas
+        </p>
       ),
     },
   },
   es: {
     nav: {
+      ariaLabel: "Navegación principal",
       about: "Sobre mí",
       skills: "Herramientas",
       projects: "Proyectos",
       contact: "Contacto",
+      openMenu: "Abrir menú de navegación",
+      closeMenu: "Cerrar menú de navegación",
+      switchLanguage: "Switch to English",
     },
     hero: {
       design: "DISEÑO",
@@ -145,6 +177,12 @@ description: (styles) => (
       kicker: "Mi Trabajo",
       title: "< Proyectos />",
       subtitle: "Algunos de los proyectos en los que he trabajado",
+      paginationLabel: "Paginación de proyectos",
+      prevPage: "Página anterior de proyectos",
+      nextPage: "Página siguiente de proyectos",
+      viewProject: "Abrir proyecto en vivo",
+      viewGithub: "Ver código en GitHub",
+      viewFigma: "Ver diseño en Figma",
     },
     contact: {
       kicker: "Ponte en contacto",
@@ -172,7 +210,25 @@ description: (styles) => (
     },
     footer: {
       text: (
-        <p>&#169; 2025 | <a href={PROFILE_LINKS.figmaDesign}>Diseñado</a> y <a href={PROFILE_LINKS.portfolioRepo}>desarrollado</a> ❤️️ por Rocio Arenillas </p>
+        <p>
+          &#169; 2025 |{" "}
+          <a
+            href={PROFILE_LINKS.figmaDesign}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Diseñado
+          </a>{" "}
+          y{" "}
+          <a
+            href={PROFILE_LINKS.portfolioRepo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            desarrollado
+          </a>{" "}
+          ❤️️ por Rocio Arenillas
+        </p>
       ),
     },
   },

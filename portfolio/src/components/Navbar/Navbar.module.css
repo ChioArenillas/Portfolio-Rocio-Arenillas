@@ -38,8 +38,17 @@
 
 .menuBtn {
   display: none;
+  background: transparent;
+  border: none;
+  padding: 4px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuIcon {
   height: 32px;
+  display: block;
 }
 
 .menuItems {
@@ -93,7 +102,7 @@
 }
 @media (max-width: 830px) {
   .menuBtn {
-    display: block;
+    display: flex;
   }
 
   .menuItems {
