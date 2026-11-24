@@ -143,6 +143,8 @@ export default function Skills() {
         alt={isDuplicate ? "" : skill.title}
         className={styles.logo}
         draggable={false}
+        loading="lazy"
+        decoding="async"
       />
       <p className={styles.skillName}>{skill.title}</p>
     </div>

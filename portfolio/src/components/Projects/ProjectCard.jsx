@@ -37,6 +37,8 @@ export const ProjectCard = ({
           src={getProjectImage(imageSrc)}
           alt={cardTitle}
           className={styles.image}
+          loading="lazy"
+          decoding="async"
         />
       </a>
 
@@ -54,6 +56,8 @@ export const ProjectCard = ({
                 src={getSkillIcon(iconFile)}
                 alt={label}
                 title={label}
+                loading="lazy"
+                decoding="async"
               />
             </li>
           );

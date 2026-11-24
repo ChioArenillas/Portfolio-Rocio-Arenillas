@@ -1,45 +1,41 @@
-# Portfolio Rocío Arenillas
+# Portfolio — Rocío Arenillas
 
 ## 🧩 Description
 
-This is a personal portfolio website designed to showcase projects, skills, and experience in web development. It allows visitors to explore different projects, learn more about the developer, and navigate through the content in a clear and intuitive way.
-
-The project focuses on building a clean and responsive interface using core frontend technologies without relying on frameworks.
+Personal portfolio website built to showcase frontend development and UX/UI design projects, technical skills, CV downloads, and contact information. Supports instant bilingual switching (English / Spanish) with language persistence and accessible navigation.
 
 ## 🚀 Live Demo
 
 https://portfolio-rocio-arenillas.vercel.app/
 
-## 🚀 Technologies
+## 🛠️ Tech Stack
 
-* HTML5
-* CSS3
-* JavaScript (ES6+)
+* **React 19** + **Vite 7**
+* **CSS Modules** + CSS custom properties
+* **Context API** for EN/ES internationalization
+* **ESLint 9** (flat config + React Hooks & Refresh rules)
+* **Vercel** & **@vercel/analytics**
 
 ## 🎯 Features
 
-* Project showcase with interactive elements
-* Clean and modern UI design
-* Smooth navigation between sections
-* Fully responsive layout
-* Lightweight performance without frameworks
+* Bilingual UI (English / Spanish) with `localStorage` persistence and synchronized `<html lang>`
+* Responsive project gallery with adaptive pagination
+* Interactive skills marquee with hover pause, drag support, and `prefers-reduced-motion` support
+* Contact form with async submission feedback (FormSubmit AJAX)
+* Accessible landmarks, keyboard navigation, and Open Graph / SEO metadata
 
-## 🧠 Key Concepts
-
-* DOM manipulation with JavaScript
-* Event handling
-* Responsive design
-* Semantic HTML structure
-* Separation of concerns (structure, style, logic)
-
-## 📦 Installation
+## 📦 Getting Started
 
 ```bash
-git clone https://github.com/ChioArenillas/Portfolio-Rocio-Arenillas
+git clone https://github.com/ChioArenillas/Portfolio-Rocio-Arenillas.git
 cd Portfolio-Rocio-Arenillas/portfolio
-open index.html
+npm install
+npm run dev
 ```
 
-## 📌 Project Status
+### Available Scripts
 
-Completed
+* `npm run dev` — Start local development server
+* `npm run build` — Build production bundle
+* `npm run preview` — Preview production build locally
+* `npm run lint` — Run ESLint checks

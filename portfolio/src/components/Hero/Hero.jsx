@@ -12,6 +12,8 @@ export default function Hero() {
         src={topPicture}
         alt=""
         aria-hidden="true"
+        fetchPriority="high"
+        decoding="async"
       />
       <div className={styles.greyBackground} aria-hidden="true"></div>
       <div className={styles.text}>

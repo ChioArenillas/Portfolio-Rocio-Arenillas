@@ -1,6 +1,8 @@
 
 import { PROFILE_LINKS } from "./profile";
 
+const currentYear = new Date().getFullYear();
+
 export const translations = {
   en: {
     nav: {
@@ -94,7 +96,7 @@ export const translations = {
     footer: {
       text: (
         <p>
-          &#169; 2025 |{" "}
+          &#169; {currentYear} |{" "}
           <a
             href={PROFILE_LINKS.figmaDesign}
             target="_blank"
@@ -108,7 +110,7 @@ export const translations = {
             target="_blank"
             rel="noopener noreferrer"
           >
-            code
+            coded
           </a>{" "}
           ❤️️ by Rocio Arenillas
         </p>
@@ -211,7 +213,7 @@ description: (styles) => (
     footer: {
       text: (
         <p>
-          &#169; 2025 |{" "}
+          &#169; {currentYear} |{" "}
           <a
             href={PROFILE_LINKS.figmaDesign}
             target="_blank"

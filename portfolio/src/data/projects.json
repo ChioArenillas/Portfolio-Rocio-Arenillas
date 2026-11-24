@@ -1,7 +1,7 @@
 [
   {
   "title": {
-    "en": "AI copilot",
+    "en": "AI Copilot",
     "es": "Copilot IA"
   },
   "imageSrc": "weroad-copilot.png",
@@ -39,7 +39,7 @@
   },
   "imageSrc": "HireFlow.png",
   "description": {
-    "en": "AI-powered job matching platform that analyzes CVs against job descriptions. Includes CV parsing, ATS-style scoring and unit testing with Vitest..",
+    "en": "AI-powered job matching platform that analyzes CVs against job descriptions. Includes CV parsing, ATS-style scoring and unit testing with Vitest.",
     "es": "Plataforma de empleo que compara CVs con las ofertas usando IA. Incluye adjuntar CV, scoring tipo ATS y tests unitarios con Vitest."
   },
     "icons": [
@@ -58,7 +58,7 @@
       "en": "SaaS Dashboard",
       "es": "Dashboard SaaS"
     },
-    "imageSrc": "Fokus.png",
+    "imageSrc": "Fokus.jpg",
     "description": {
       "en": "Built a SaaS-style web application, featuring a user portal with Firebase authentication, dynamic boards and task management, and full CRUD functionality.",
       "es": "Aplicación web tipo SaaS con portal de usuario, autenticación con Firebase, tableros dinámicos, gestión de tareas y funcionalidad CRUD completa."
@@ -129,7 +129,7 @@
 },
   {
   "title": {
-    "en": "Shooping List",
+    "en": "Shopping List",
     "es": "Lista de la compra"
   },
   "imageSrc": "Shopping.png",
@@ -151,7 +151,7 @@
       "en": "3D products Marketplace",
       "es": "Marketplace productos 3D"
     },
-    "imageSrc": "PrintForge.png",
+    "imageSrc": "PrintForge.jpg",
     "description": {
       "en": "Developed a 3D printing platform with dynamic content rendering, category-based filtering, and a responsive UI built with a component-based architecture.",
       "es": "Plataforma de impresión 3D con renderizado dinámico de contenido, filtrado por categorías e interfaz responsiva basada en componentes."
@@ -191,7 +191,7 @@
       "en": "Product Manager",
       "es": "Gestor Productos"
     },
-    "imageSrc": "Donuts.png",
+    "imageSrc": "Donuts.jpg",
     "description": {
       "en": "Developed a dynamic product management application with React, enabling creation, deletion, and persistence of items in a remote database.",
       "es": "Aplicación dinámica de gestión de productos con React, permitiendo crear, eliminar y persistir elementos en una base de datos remota."
@@ -293,7 +293,7 @@
       "en": "Analytics Dashboard",
       "es": "Dashboard Analítico"
     },
-    "imageSrc": "Dashboard.png",
+    "imageSrc": "Dashboard.jpg",
     "description": {
       "en": "Developed a real-time dashboard displaying dynamic data from multiple APIs including weather, Bitcoin, location, and date information.",
       "es": "Dashboard en tiempo real que muestra datos dinámicos de múltiples APIs: clima, Bitcoin, ubicación e información de fecha."
@@ -349,7 +349,7 @@
       "en": "Blackjack Game",
       "es": "Juego de Blackjack"
     },
-    "imageSrc": "Blackjack.png",
+    "imageSrc": "Blackjack.jpg",
     "description": {
       "en": "Developed an interactive Blackjack game with button-driven gameplay and structured game logic using JavaScript.",
       "es": "Juego interactivo de Blackjack con control por botones y lógica estructurada del juego usando JavaScript."
@@ -363,7 +363,7 @@
       "en": "Movie Finder",
       "es": "Buscador Pelis"
     },
-    "imageSrc": "dataFilms.png",
+    "imageSrc": "dataFilms.jpg",
     "description": {
       "en": "Built a movie search application with filtering, grid/list views, and dynamic data fetching from an external API.",
       "es": "Aplicación de búsqueda de películas con filtrado, vistas de cuadrícula/lista y obtención dinámica de datos desde API externa."
@@ -391,7 +391,7 @@
       "en": "Static Website",
       "es": "Web Estática"
     },
-    "imageSrc": "web.png",
+    "imageSrc": "web.jpg",
     "description": {
       "en": "Built a movie information website using semantic HTML and CSS with a focus on clean layout and usability.",
       "es": "Web de información de películas usando HTML semántico y CSS, con enfoque en diseño limpio y usabilidad."
@@ -405,7 +405,7 @@
       "en": "Detail Page",
       "es": "Página Detalle"
     },
-    "imageSrc": "MovieData.png",
+    "imageSrc": "MovieData.jpg",
     "description": {
       "en": "Developed a movie details page using HTML and CSS, focusing on structured layout and visual clarity.",
       "es": "Página de detalles de película con HTML y CSS, enfocada en diseño estructurado y claridad visual."
