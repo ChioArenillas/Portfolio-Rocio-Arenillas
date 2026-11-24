@@ -1,5 +1,6 @@
-.footer{
-    background-color: rgba(128, 128, 128, 0.429);
+.footer {
+  background-color: #eef2f3;
+  border-top: 1px solid #d5dfe1;
 }
 .content{
     padding-top: 30px;
